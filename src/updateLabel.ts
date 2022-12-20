@@ -1,12 +1,13 @@
 import * as https from "https";
-import { owner, repo, token } from ".";
+import { token } from ".";
+import { OWNER, REPO } from "./config";
 
 export async function updateLabel(label: string, color: string) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${owner}/${repo}/labels/${encodeURIComponent(label)}`,
+      path: `/repos/${OWNER}/${REPO}/labels/${encodeURIComponent(label)}`,
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -15,9 +16,7 @@ export async function updateLabel(label: string, color: string) {
       },
     };
 
-    // console.log(options);
     const req = https.request(options, (res) => {
-      // console.log(`statusCode: ${res.statusCode}`);
       if (res.statusCode !== 200) {
         reject(new Error(`Request failed with status code ${res.statusCode}`));
         return;
