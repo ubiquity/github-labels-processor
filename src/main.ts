@@ -7,7 +7,7 @@ export async function main() {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${owner}/${repo}/labels`,
+      path: `/repos/${owner}/${repo}/labels?per_page=1000`,
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -16,19 +16,19 @@ export async function main() {
       },
     };
 
+
     const request = https
       .get(options, (res) => {
-        // if (res.statusCode !== 200) {
-        //   reject(
-        //     new Error(`Request failed with status code ${res.statusCode}`)
-        //   );
-        //   return;
-        // }
+        if (res.statusCode !== 200) {
+          reject(
+            new Error(`Request failed with status code ${res.statusCode}`)
+          );
+          return;
+        }
 
         let data = "";
         res.on("data", (chunk) => {
           data += chunk;
-          // process.stdout.write(chunk);
         });
         res.on("end", () => {
           resolve(JSON.parse(data));
@@ -48,7 +48,7 @@ console.log(labelsResponse);
 
   for (const label of labelsResponse as Label[]) {
     if (label.name.startsWith("Price: ")) {
-      await updateLabel(label.name, "00ff00");
+      await updateLabel(label.name, "008000");
     }
   }
 }

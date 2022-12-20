@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "nodemon -e ts --exec 'yarn tsx src/index.ts'"
+  },
   "dependencies": {
     "dotenv": "^16.0.3",
     "https": "^1.0.0",
