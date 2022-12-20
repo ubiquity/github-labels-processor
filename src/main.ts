@@ -17,17 +17,18 @@ export async function main() {
     };
 
     const request = https
-      .request(options, (res) => {
-        if (res.statusCode !== 200) {
-          reject(
-            new Error(`Request failed with status code ${res.statusCode}`)
-          );
-          return;
-        }
+      .get(options, (res) => {
+        // if (res.statusCode !== 200) {
+        //   reject(
+        //     new Error(`Request failed with status code ${res.statusCode}`)
+        //   );
+        //   return;
+        // }
 
         let data = "";
         res.on("data", (chunk) => {
           data += chunk;
+          // process.stdout.write(chunk);
         });
         res.on("end", () => {
           resolve(JSON.parse(data));
@@ -43,9 +44,21 @@ export async function main() {
     request.end();
   });
 
-  for (const label of labelsResponse as any) {
+console.log(labelsResponse);
+
+  for (const label of labelsResponse as Label[]) {
     if (label.name.startsWith("Price: ")) {
-      await updateLabel(label.name, "#00ff00");
+      await updateLabel(label.name, "00ff00");
     }
   }
+}
+
+interface Label {
+  id: 4909753686,
+  node_id: 'LA_kwDOF4fVBs8AAAABJKTlVg',
+  url: 'https://api.github.com/repos/ubiquity/ubiquity-dollar/labels/Price:%20300%20USDC',
+  name: 'Price: 300 USDC',
+  color: 'ededed',
+  default: false,
+  description: null
 }

@@ -2,7 +2,7 @@ import * as https from "https";
 import { owner, repo, token } from ".";
 
 export async function updateLabel(label: string, color: string) {
-  return new Promise<void>((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
@@ -15,15 +15,18 @@ export async function updateLabel(label: string, color: string) {
       },
     };
 
+    // console.log(options);
     const req = https.request(options, (res) => {
+      // console.log(`statusCode: ${res.statusCode}`);
       if (res.statusCode !== 200) {
         reject(new Error(`Request failed with status code ${res.statusCode}`));
         return;
       }
 
       res.on("data", () => {});
-      res.on("end", () => resolve());
+      res.on("end", () => resolve(undefined));
     });
+
 
     req.on("error", (error) => {
       reject(error);
