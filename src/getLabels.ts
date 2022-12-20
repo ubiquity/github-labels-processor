@@ -44,16 +44,10 @@ export async function getLabels() {
     request.end();
   });
 
-  console.log(labelsResponse);
-
-  for (const label of labelsResponse as Label[]) {
-    if (label.name.match(SEARCH_QUERY_REGEX)?.shift()) {
-      await updateLabel(label.name, TO_COLOR);
-    }
-  }
+  return labelsResponse;
 }
 
-interface Label {
+export interface Label {
   id: number;
   node_id: string;
   url: string;

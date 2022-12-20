@@ -17,7 +17,7 @@ export async function removeLabel(label: string) {
     };
 
     const req = https.request(options, (res) => {
-      if (res.statusCode !== 200) {
+      if (res.statusCode !== 204) {
         reject(new Error(`Request failed with status code ${res.statusCode}`));
         return;
       }
@@ -29,12 +29,6 @@ export async function removeLabel(label: string) {
     req.on("error", (error) => {
       reject(error);
     });
-
-    // req.write(
-    //   JSON.stringify({
-    //     color: color,
-    //   })
-    // );
 
     req.end();
   });
