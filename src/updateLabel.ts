@@ -27,7 +27,6 @@ export async function updateLabel(label: string, color: string) {
       res.on("end", () => resolve(undefined));
     });
 
-
     req.on("error", (error) => {
       reject(error);
     });

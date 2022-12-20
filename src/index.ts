@@ -9,7 +9,9 @@ if (token === undefined) {
 // Replace with the owner and repository name
 export const owner = "ubiquity";
 export const repo = "ubiquity-dollar";
+const toColor = "008000";
+const searchQuery = "Price: ";
 
-fetchLabels().catch((error) => {
+fetchLabels(searchQuery, toColor).catch((error) => {
   console.error(error);
 });
