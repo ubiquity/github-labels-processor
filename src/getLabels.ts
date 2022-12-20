@@ -1,6 +1,6 @@
 import * as https from "https";
 import { token } from ".";
-import { OWNER, REPO, SEARCH_QUERY, TO_COLOR } from "./config";
+import { OWNER, REPO, SEARCH_QUERY_REGEX, TO_COLOR } from "./config";
 import { updateLabel } from "./updateLabel";
 
 export async function getLabels() {
@@ -47,18 +47,18 @@ export async function getLabels() {
   console.log(labelsResponse);
 
   for (const label of labelsResponse as Label[]) {
-    if (label.name.includes(SEARCH_QUERY)) {
+    if (label.name.match(SEARCH_QUERY_REGEX)?.shift()) {
       await updateLabel(label.name, TO_COLOR);
     }
   }
 }
 
 interface Label {
-  id: 4909753686;
-  node_id: "LA_kwDOF4fVBs8AAAABJKTlVg";
-  url: "https://api.github.com/repos/ubiquity/ubiquity-dollar/labels/Price:%20300%20USDC";
-  name: "Price: 300 USDC";
-  color: "ededed";
-  default: false;
-  description: null;
+  id: number;
+  node_id: string;
+  url: string;
+  name: string;
+  color: string;
+  default: boolean;
+  description: null | string;
 }
