@@ -15,10 +15,12 @@ getLabels()
 
     for (const label of labelsResponse as Label[]) {
       if (label.name.match(SEARCH_QUERY_REGEX)?.shift()) {
+        console.log(`Processing label: ${label.name}`);
         // await removeLabel(label.name);
         // await updateLabel(label.name, TO_COLOR);
         throw new Error("Not implemented yet");
       }
+      console.trace(`Change the program logic here`);
     }
   })
   .catch((error) => {
