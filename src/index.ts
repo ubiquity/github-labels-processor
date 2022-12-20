@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { main } from "./main";
+import { fetchLabels } from "./fetchLabels";
 // Replace with your personal access token
 dotenv.config();
 export const token = process.env.GITHUB_TOKEN;
@@ -10,6 +10,6 @@ if (token === undefined) {
 export const owner = "ubiquity";
 export const repo = "ubiquity-dollar";
 
-main().catch((error) => {
+fetchLabels().catch((error) => {
   console.error(error);
 });
