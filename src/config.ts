@@ -1,4 +1,3 @@
 export const OWNER = "ubiquity";
-export const REPO = "ubiquity-dollar";
-export const TO_COLOR = "000000";
-export const SEARCH_QUERY_REGEX = new RegExp("^[0-9]+ USD$");
+export const REPO = "bounty-bot";
+export const SEARCH_QUERY_REGEX = new RegExp("[^help wanted]"); // "^Price:.+USDC$"

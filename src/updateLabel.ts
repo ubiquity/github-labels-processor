@@ -1,8 +1,11 @@
 import * as https from "https";
 import { token } from ".";
 import { OWNER, REPO } from "./config";
+import { Label } from "./getLabels";
 
-export async function updateLabel(label: string, color: string) {
+interface LabelLike extends Partial<Label> {}
+
+export async function updateLabel(label: string, labelLike: LabelLike) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
@@ -30,11 +33,7 @@ export async function updateLabel(label: string, color: string) {
       reject(error);
     });
 
-    req.write(
-      JSON.stringify({
-        color: color,
-      })
-    );
+    req.write(JSON.stringify(labelLike as LabelLike));
 
     req.end();
   });

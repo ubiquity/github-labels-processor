@@ -1,7 +1,6 @@
 import * as https from "https";
 import { token } from ".";
-import { OWNER, REPO, SEARCH_QUERY_REGEX, TO_COLOR } from "./config";
-import { updateLabel } from "./updateLabel";
+import { OWNER, REPO } from "./config";
 
 export async function getLabels() {
   const labelsResponse = await new Promise((resolve, reject) => {

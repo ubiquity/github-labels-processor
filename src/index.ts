@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import { updateLabel } from "./updateLabel";
-import { SEARCH_QUERY_REGEX, TO_COLOR } from "./config";
+import { SEARCH_QUERY_REGEX } from "./config";
 import { getLabels, Label } from "./getLabels";
 import { removeLabel } from "./removeLabel";
 dotenv.config();
@@ -17,10 +17,10 @@ getLabels()
       if (label.name.match(SEARCH_QUERY_REGEX)?.shift()) {
         console.log(`Processing label: ${label.name}`);
         // await removeLabel(label.name);
-        // await updateLabel(label.name, TO_COLOR);
-        throw new Error("Not implemented yet");
+        // await updateLabel(label.name, {color: "000000"});
+        // throw new Error("Not implemented yet");
       }
-      console.trace(`Change the program logic here`);
+      // console.trace(`Change the program logic here`);
     }
   })
   .catch((error) => {
