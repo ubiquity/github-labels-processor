@@ -2,7 +2,8 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "dev": "nodemon -e ts --exec 'yarn tsx src/index.ts'",
-    "prettier": "prettier src/ --write"
+    "prettier": "prettier src/ --write",
+    "utils:remove-list": "npx tsx -e \"require('./src/utils/clear-unused-labels/clear-unused-labels.ts').default();\""
   },
   "dependencies": {
     "dotenv": "^16.0.3",
