@@ -1,13 +1,13 @@
 import * as https from "https";
-import { token } from ".";
-import { OWNER, REPO } from "./config";
+import { token } from "..";
+import { OWNER, REPO } from "../config";
 
-export async function getLabels() {
+export async function getGitHub(path: string) {
   const labelsResponse = await new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${OWNER}/${REPO}/labels?per_page=1000`,
+      path: path,
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -44,14 +44,4 @@ export async function getLabels() {
   });
 
   return labelsResponse;
-}
-
-export interface Label {
-  id: number;
-  node_id: string;
-  url: string;
-  name: string;
-  color: string;
-  default: boolean;
-  description: null | string;
 }

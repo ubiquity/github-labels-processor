@@ -1,28 +1,29 @@
-import dotenv from "dotenv";
-import { updateLabel } from "./updateLabel";
-import { SEARCH_QUERY_REGEX } from "./config";
-import { getLabels, Label } from "./getLabels";
-import { removeLabel } from "./removeLabel";
+import dotenv from 'dotenv';
+import { OWNER, REPO, SEARCH_QUERY_REGEX } from './config';
+import { getGitHub } from './network/get';
+import { Label } from './network/label';
 dotenv.config();
 export const token = process.env.GITHUB_TOKEN;
 if (token === undefined) {
-  throw new Error("GITHUB_TOKEN is not defined");
+  throw new Error('GITHUB_TOKEN is not defined');
 }
 
-getLabels()
-  .then(async (labelsResponse) => {
-    console.log(labelsResponse);
+export default async function main() {
+  const labelsResponse = await getGitHub(
+    `/repos/${OWNER}/${REPO}/labels?per_page=1000`
+  );
 
-    for (const label of labelsResponse as Label[]) {
-      if (label.name.match(SEARCH_QUERY_REGEX)?.shift()) {
-        console.log(`Processing label: ${label.name}`);
-        // await removeLabel(label.name);
-        // await updateLabel(label.name, {color: "000000"});
-        // throw new Error("Not implemented yet");
-      }
-      // console.trace(`Change the program logic here`);
+  console.log(labelsResponse);
+
+  for (const label of labelsResponse as Label[]) {
+    const match = label.name.match(SEARCH_QUERY_REGEX)?.shift();
+    if (match) {
+      console.log(`Processing label: "${label.name}"`);
+      // await removeLabel(label.name);
+      // await updateLabel(label.name, {color: "000000"});
+      return console.log(`no logic implemented yet`);
+    } else {
+      console.log(`Skipping label: "${label.name}"`);
     }
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+  }
+}

@@ -1,17 +1,14 @@
 import * as https from "https";
-import { token } from ".";
-import { OWNER, REPO } from "./config";
-import { Label } from "./getLabels";
+import { token } from "..";
+import { OWNER, REPO } from "../config";
 
-interface LabelLike extends Partial<Label> {}
-
-export async function updateLabel(label: string, labelLike: LabelLike) {
+export async function removeLabel(label: string) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
       path: `/repos/${OWNER}/${REPO}/labels/${encodeURIComponent(label)}`,
-      method: "PATCH",
+      method: "DELETE",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
@@ -20,7 +17,7 @@ export async function updateLabel(label: string, labelLike: LabelLike) {
     };
 
     const req = https.request(options, (res) => {
-      if (res.statusCode !== 200) {
+      if (res.statusCode !== 204) {
         reject(new Error(`Request failed with status code ${res.statusCode}`));
         return;
       }
@@ -32,8 +29,6 @@ export async function updateLabel(label: string, labelLike: LabelLike) {
     req.on("error", (error) => {
       reject(error);
     });
-
-    req.write(JSON.stringify(labelLike as LabelLike));
 
     req.end();
   });
