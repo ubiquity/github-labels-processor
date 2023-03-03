@@ -1,3 +1,8 @@
 export const OWNER = "ubiquity";
-export const REPO = "ubiquity-dollar";
-export const SEARCH_QUERY_REGEX = new RegExp("^(Time|Priority):.+"); // "^Price:.+USDC$"
+export const REPO = "bounty-bot";
+
+// const regex = "^(Time|Priority):.+"
+
+const regex = "^Price:.+";
+
+export const SEARCH_QUERY_REGEX = new RegExp(regex); // "^Price:.+USDC$"

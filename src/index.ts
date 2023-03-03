@@ -23,7 +23,7 @@ export default async function main() {
       // await updateLabel(label.name, {color: "000000"});
       return console.log(`no logic implemented yet`);
     } else {
-      console.log(`Skipping label: "${label.name}"`);
+      console.log(`Filtered out: "${label.name}"`);
     }
   }
 }
