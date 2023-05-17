@@ -1,6 +1,6 @@
 import { removeLabel } from '../../network/removeLabel';
-import { collectIssuesAndPRs } from './collectIssuesAndPRs';
-import { collectRemoveList } from './collectRemoveList';
+import { collectIssuesAndPRs } from './_collectIssuesAndPRs';
+import { collectRemoveList } from './_collectRemoveList';
 
 const token = process.env.GITHUB_TOKEN;
 

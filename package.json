@@ -1,17 +1,26 @@
 {
+  "license": "MIT",
   "scripts": {
-    "start": "tsx src/index.ts",
+    "start": "tsx src/cli/cli-entry-wrapper.ts",
+    "start:price": "tsx src/cli/cli-entry-wrapper.ts --regex ^Price:.+ ",
+    "start:time": "tsx src/cli/cli-entry-wrapper.ts --regex ^Time:.+ ",
+    "start:priority": "tsx src/cli/cli-entry-wrapper.ts --regex ^Priority:.+ ",
     "dev": "nodemon -e ts --exec 'yarn tsx src/index.ts'",
-    "prettier": "prettier src/ --write",
-    "utils:remove-list": "npx tsx -e \"require('./src/utils/clear-unused-labels/clear-unused-labels.ts').default();\""
+    "format": "prettier src/ --write",
+    "utils:remove-list": "tsx -e \"require('src/utils/clear-unused-labels/clear-unused-labels.ts').default();\"",
+    "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\""
   },
   "dependencies": {
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^7.0.1",
     "dotenv": "^16.0.3",
     "https": "^1.0.0",
     "prettier": "^2.8.1",
     "typescript": "^4.9.4"
   },
   "devDependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/command-line-usage": "^5.0.2",
     "@types/node": "^18.11.17",
     "nodemon": "^2.0.20",
     "tsx": "^3.12.1"
