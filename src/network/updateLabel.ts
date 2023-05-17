@@ -14,9 +14,9 @@ export async function updateLabel(
     const options = {
       hostname: 'api.github.com',
       port: 443,
-      path: `/repos/${home.owner}/${home.repository}/labels/${encodeURIComponent(
-        labelName
-      )}`,
+      path: `/repos/${home.owner}/${
+        home.repository
+      }/labels/${encodeURIComponent(labelName)}`,
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
