@@ -2,6 +2,7 @@
   "license": "MIT",
   "scripts": {
     "start": "tsx src/cli/cli-entry-wrapper.ts",
+    "tools:reset-colors": "tsx src/cli/cli-entry-wrapper.ts --tool reset-colors",
     "start:price": "tsx src/cli/cli-entry-wrapper.ts --regex ^Price:.+ ",
     "start:time": "tsx src/cli/cli-entry-wrapper.ts --regex ^Time:.+ ",
     "start:priority": "tsx src/cli/cli-entry-wrapper.ts --regex ^Priority:.+ ",
