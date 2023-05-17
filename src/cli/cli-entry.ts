@@ -30,6 +30,6 @@ export default async function cliEntry() {
 
   // Colorize labels.
   if (args.color) {
-    await colorizeLabels(labels, args);
+    await colorizeLabels(selected, args);
   }
 }

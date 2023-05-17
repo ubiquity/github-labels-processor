@@ -1,14 +1,14 @@
 import { Label } from "../network/label";
-import { updateLabel } from "../network/updateLabel";
+import { updateLabel } from "../network/update-label";
 
 // const OWNER = 'ubiquity';
 // const REPO = 'pay.ubq.fi';
 // const regex = '^Price:.+';
 
-const GitHubReferenceColors = {
-  "1f883d": "green",
-  ededed: "grey",
-};
+// const GitHubReferenceColors = {
+//   "1f883d": "green",
+//   ededed: "grey",
+// };
 
 export default async function colorizeLabels(labels: Label[], args) {
   labels.forEach(
