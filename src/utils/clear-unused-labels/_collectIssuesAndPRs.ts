@@ -1,7 +1,7 @@
-import { OWNER, REPO } from '../../config';
-import { getGitHub } from '../../network/get';
-import { Label } from '../../network/label';
-import { singleItem } from '../example-response';
+import { OWNER, REPO } from "../../config";
+import { getGitHub } from "../../network/get";
+import { Label } from "../../network/label";
+import { singleItem } from "../example-response";
 
 export async function collectIssuesAndPRs(): Promise<Map<string, number>> {
   const usedLabels = [] as string[];

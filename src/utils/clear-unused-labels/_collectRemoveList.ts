@@ -1,6 +1,6 @@
-import { OWNER, REPO, SEARCH_QUERY_REGEX } from '../../config';
-import { getGitHub } from '../../network/get';
-import { Label } from '../../network/label';
+import { OWNER, REPO, SEARCH_QUERY_REGEX } from "../../config";
+import { getGitHub } from "../../network/get";
+import { Label } from "../../network/label";
 
 export async function collectRemoveList(
   usedLabelsWithCount: Map<string, number>

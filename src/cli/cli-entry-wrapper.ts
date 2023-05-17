@@ -1,2 +1,2 @@
-import cliEntry from './cli-entry';
+import cliEntry from "./cli-entry";
 cliEntry();

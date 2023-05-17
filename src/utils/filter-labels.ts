@@ -1,4 +1,4 @@
-import { Label } from '../network/label';
+import { Label } from "../network/label";
 
 export default async function filterLabels(labels: Label[], regex: string) {
   const SEARCH_QUERY_REGEX = new RegExp(regex); // "^Price:.+USDC$"

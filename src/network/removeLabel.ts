@@ -1,18 +1,18 @@
-import * as https from 'https';
-import { githubToken } from '../utils/get-github-token';
-import { OWNER, REPO } from '../config';
+import * as https from "https";
+import { githubToken } from "../utils/get-github-token";
+import { OWNER, REPO } from "../config";
 
 export async function removeLabel(label: string) {
   return new Promise((resolve, reject) => {
     const options = {
-      hostname: 'api.github.com',
+      hostname: "api.github.com",
       port: 443,
       path: `/repos/${OWNER}/${REPO}/labels/${encodeURIComponent(label)}`,
-      method: 'DELETE',
+      method: "DELETE",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
         Authorization: `Bearer ${githubToken}`,
-        'User-Agent': 'MyApp/1.0.0',
+        "User-Agent": "MyApp/1.0.0",
       },
     };
 
@@ -22,11 +22,11 @@ export async function removeLabel(label: string) {
         return;
       }
 
-      res.on('data', () => {});
-      res.on('end', () => resolve(undefined));
+      res.on("data", () => {});
+      res.on("end", () => resolve(undefined));
     });
 
-    req.on('error', error => {
+    req.on("error", error => {
       reject(error);
     });
 

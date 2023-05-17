@@ -1,18 +1,17 @@
-import * as https from 'https';
-import { githubToken } from '../utils/get-github-token';
-import { OWNER, REPO } from '../config';
+import * as https from "https";
+import { githubToken } from "../utils/get-github-token";
 
 export async function getGitHub(path: string) {
   const labelsResponse = await new Promise((resolve, reject) => {
     const options = {
-      hostname: 'api.github.com',
+      hostname: "api.github.com",
       port: 443,
       path: path,
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
         Authorization: `Bearer ${githubToken}`,
-        'User-Agent': 'MyApp/1.0.0',
+        "User-Agent": "MyApp/1.0.0",
       },
     };
 
@@ -25,21 +24,15 @@ export async function getGitHub(path: string) {
           return;
         }
 
-        let data = '';
-        res.on('data', chunk => {
-          data += chunk;
-        });
-        res.on('end', () => {
+        let data = "";
+        res.on("data", chunk => (data += chunk));
+        res.on("end", () => {
           resolve(JSON.parse(data));
         });
       })
-      .on('error', error => {
-        reject(error);
-      });
+      .on("error", error => reject);
 
-    request.on('error', e => {
-      console.error(e);
-    });
+    request.on("error", e => console.error);
     request.end();
   });
 

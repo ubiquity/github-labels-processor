@@ -1,7 +1,7 @@
-import { IncomingMessage, ServerResponse } from 'http';
-import * as https from 'https';
-import { githubToken } from '../utils/get-github-token';
-import { Label } from './label';
+import { IncomingMessage, ServerResponse } from "http";
+import * as https from "https";
+import { githubToken } from "../utils/get-github-token";
+import { Label } from "./label";
 
 interface LabelLike extends Partial<Label> {}
 
@@ -12,16 +12,16 @@ export async function updateLabel(
 ): Promise<IncomingMessage> {
   return new Promise((resolve, reject) => {
     const options = {
-      hostname: 'api.github.com',
+      hostname: "api.github.com",
       port: 443,
       path: `/repos/${home.owner}/${
         home.repository
       }/labels/${encodeURIComponent(labelName)}`,
-      method: 'PATCH',
+      method: "PATCH",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
         Authorization: `Bearer ${githubToken}`,
-        'User-Agent': 'MyApp/1.0.0',
+        "User-Agent": "MyApp/1.0.0",
       },
     };
 
@@ -31,11 +31,11 @@ export async function updateLabel(
         return;
       }
 
-      res.on('data', () => {});
-      res.on('end', () => resolve(res));
+      res.on("data", () => {});
+      res.on("end", () => resolve(res));
     });
 
-    req.on('error', error => {
+    req.on("error", error => {
       reject(error);
     });
 
