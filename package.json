@@ -7,9 +7,7 @@
     "start:priority": "tsx src/cli/cli-entry-wrapper.ts --regex ^Priority:.+ ",
     "format": "prettier src/ --write",
     "utils:remove-list": "tsx -e \"require('src/utils/clear-unused-labels/clear-unused-labels.ts').default();\"",
-    "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\"",
-    "utils:colorize:green": "tsx src/cli/cli-entry-wrapper.ts --color 1f883d",
-    "utils:colorize:grey": "tsx src/cli/cli-entry-wrapper.ts --color ededed"
+    "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\""
   },
   "dependencies": {
     "command-line-args": "^5.2.1",

@@ -13,6 +13,12 @@ export default async function cliEntry() {
     process.exit(1);
   }
 
+  // Tool mode
+  if (args.tool) {
+    const tool = await import(`../tools/${args.tool}`);
+    return await tool.default(args);;
+  }
+
   // Get all labels.
   const labels = await getAllLabels(
     args as { owner: string; repository: string }

@@ -28,6 +28,11 @@ const optionDefinitions = [
     alias: "e",
     description: "Regex filter to search for.",
   },
+  {
+    name: "tool",
+    type: String,
+    description: "Custom scripts with more advanced logic.",
+  },
 ];
 
 export default (function readCommandLineArgs() {
