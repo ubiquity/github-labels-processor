@@ -1,5 +1,6 @@
 import commandLineArgs from 'command-line-args';
 import commandLineUsage from 'command-line-usage';
+
 const optionDefinitions = [
   { name: 'help', type: Boolean, alias: '?', description: 'Help menu.' },
   {
@@ -28,25 +29,32 @@ const optionDefinitions = [
     description: 'Regex filter to search for.',
   },
 ];
-function readCommandLineArgs() {
+
+export default (function readCommandLineArgs() {
   const options = commandLineArgs(optionDefinitions);
   if (options.help) {
-    const usage = commandLineUsage([
-      {
-        header: 'Label Processor',
-        content: 'Batch operations on GitHub labels.',
-      },
-      { header: 'Options', optionList: optionDefinitions },
-      { content: 'Copyright 2023' },
-    ]);
-    console.log(usage);
-    process.exit(0);
+    displayHelpMenu();
   } else {
-    if (Object.keys(options).length) {
-      console.log(`<<`, options);
-    }
+    displayInputArgs(options);
   }
   return options;
+})();
+
+function displayInputArgs(options: commandLineArgs.CommandLineOptions) {
+  if (Object.keys(options).length) {
+    console.log(`<<`, options);
+  }
 }
-const args = readCommandLineArgs();
-export default args;
+
+function displayHelpMenu() {
+  const usage = commandLineUsage([
+    {
+      header: 'Label Processor',
+      content: 'Batch operations on GitHub labels.',
+    },
+    { header: 'Options', optionList: optionDefinitions },
+    { content: 'Copyright 2023' },
+  ]);
+  console.log(usage);
+  process.exit(0);
+}
