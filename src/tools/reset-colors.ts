@@ -5,11 +5,12 @@ import { getAllLabels } from "../utils/get-labels";
 export default async function resetColors(args) {
   // Get all labels.
   const allLabels = await getAllLabels(args);
-  args.regex = ".*";
+  // do not select labels with `^Price:.+` regex
+  const notPriceLabels = await filterLabels(allLabels, `^(?!Price:.+).+`);
 
   // Default to grey color.
   args.color = "ededed";
-  await colorizeLabels(allLabels, args);
+  await colorizeLabels(notPriceLabels, args);
 
   // Filter for `Price: ` labels.
   const priceLabels = await filterLabels(allLabels, `^Price:.+`);
