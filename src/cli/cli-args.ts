@@ -31,7 +31,7 @@ const optionDefinitions = [
   {
     name: "tool",
     type: String,
-    description: "Custom scripts with more advanced logic.",
+    description: "Pass in the selected labels and perform actions on those labels.",
   },
   {
     name: "execute",
