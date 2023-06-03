@@ -26,7 +26,7 @@ Options
   Copyright 2023
 ```
 
-Note: you must include the organization and repository name in the command line arguments, or it will throw an error.
+Note: you must include the owner and repository name in the command line arguments, or it will throw an error.
 
 ### Tool: Reset Labels to Default Colors
 
