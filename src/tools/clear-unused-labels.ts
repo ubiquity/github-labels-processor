@@ -1,12 +1,8 @@
 import { log } from "../cli/logging";
 import { getGitHub } from "../network/get";
 import { Label } from "../network/label";
-
-const token = process.env.GITHUB_TOKEN;
-
-if (token === undefined) {
-  throw new Error("GITHUB_TOKEN is not defined");
-}
+import { singleItem } from "../utils/example-response";
+import _deleteLabels from "./delete-labels";
 
 export default async function clearUnusedLabels(args, selected) {
   const usedLabelsWithCount = await getUsedLabelsWithCount(args, selected);
@@ -27,9 +23,6 @@ export default async function clearUnusedLabels(args, selected) {
 
   await _deleteLabels(args, unusedLabels);
 }
-
-import { singleItem } from "../utils/example-response";
-import _deleteLabels from "./delete-labels";
 
 async function getUsedLabelsWithCount(
   args,

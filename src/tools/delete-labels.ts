@@ -9,5 +9,7 @@ export default async function _deleteLabels(args, selected) {
       log.info(`deleting label: ${label}`);
       await removeLabel(args, label);
     }
+  } else {
+    log.info("dry run, not deleting labels. Use `--execute` to delete labels")
   }
 }

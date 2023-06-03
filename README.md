@@ -1,16 +1,10 @@
 # GitHub Label Processor
 
-Our bot creates and modifies many labels. This tool is used to manage them.
-
-You can use regular expressions to select labels to modify.
-
-As of now, it only modifies label colors.
+Our bot creates and modifies many labels. This tool is used to manage them. You can use regular expressions to select labels.
 
 ### Help Menu Preview
 
 ```log
-$ yarn start --help
-
 Label Processor
 
   Batch operations on GitHub labels.
@@ -26,6 +20,8 @@ Options
                             `ff0000`.
   -e, --regex string        Regex filter to search for.
   --tool string             Custom scripts with more advanced logic.
+  -x, --execute             Execute destructive command (e.g. delete label).
+                            Otherwise, just print the dry run.
 
   Copyright 2023
 ```
