@@ -33,5 +33,4 @@ export default async function cliEntry() {
     const tool = await import(`../tools/${args.tool}`);
     return await tool.default(args, selectedBuffer);
   }
-
 }

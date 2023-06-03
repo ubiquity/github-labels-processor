@@ -1,13 +1,14 @@
 import * as https from "https";
 import { githubToken } from "../utils/get-github-token";
-import { OWNER, REPO } from "../config";
 
-export async function removeLabel(label: string) {
+export async function removeLabel(args, label: string) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${OWNER}/${REPO}/labels/${encodeURIComponent(label)}`,
+      path: `/repos/${args.owner}/${
+        args.repository
+      }/labels/${encodeURIComponent(label)}`,
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

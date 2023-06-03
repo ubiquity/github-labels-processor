@@ -28,7 +28,7 @@ export async function updateLabel(
     const req = https.request(options, res => {
       if (res.statusCode !== 200) {
         if (res.statusCode === 404) {
-          console.trace({home, labelName, labelNew});
+          console.trace({ home, labelName, labelNew });
           reject(new Error(`Label ${labelName} not found`));
           return;
         }
