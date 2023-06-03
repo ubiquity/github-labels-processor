@@ -33,6 +33,12 @@ const optionDefinitions = [
     type: String,
     description: "Custom scripts with more advanced logic.",
   },
+  {
+    name: "execute",
+    type: Boolean,
+    alias: "x",
+    description: "Execute destructive command (e.g. delete label). Otherwise, just print the dry run.",
+  }
 ];
 
 export default (function readCommandLineArgs() {

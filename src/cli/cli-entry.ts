@@ -13,12 +13,6 @@ export default async function cliEntry() {
     process.exit(1);
   }
 
-  // Tool mode
-  if (args.tool) {
-    const tool = await import(`../tools/${args.tool}`);
-    return await tool.default(args);;
-  }
-
   // Get all labels.
   const labels = await getAllLabels(
     args as { owner: string; repository: string }
@@ -34,8 +28,10 @@ export default async function cliEntry() {
   const selectedBuffer = selected.map(label => label.name);
   log.ok(`Selected the following labels:\n\n${selectedBuffer.join("\n")}`);
 
-  // Colorize labels.
-  if (args.color) {
-    await colorizeLabels(selected, args);
+  // Select tool
+  if (args.tool) {
+    const tool = await import(`../tools/${args.tool}`);
+    return await tool.default(args, selectedBuffer);
   }
+
 }
