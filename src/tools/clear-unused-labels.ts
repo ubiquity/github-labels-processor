@@ -4,8 +4,15 @@ import { Label } from "../network/label";
 import { singleItem } from "../utils/example-response";
 import _deleteLabels from "./delete-labels";
 
-export default async function clearUnusedLabels(args, selected) {
-  const usedLabelsWithCount = await getUsedLabelsWithCount(args, selected);
+export default async function clearUnusedLabels(
+  args: {
+    owner: string;
+    repository: string;
+    execute?: boolean;
+  },
+  selected: string[]
+) {
+  const usedLabelsWithCount = await getUsedLabelsWithCount(args);
 
   // compare selected labels with used labels
   // delete selected labels that are not used
@@ -24,10 +31,10 @@ export default async function clearUnusedLabels(args, selected) {
   await _deleteLabels(args, unusedLabels);
 }
 
-async function getUsedLabelsWithCount(
-  args,
-  selected
-): Promise<Map<string, number>> {
+async function getUsedLabelsWithCount(args: {
+  owner: string;
+  repository: string;
+}): Promise<Map<string, number>> {
   const usedLabels = [] as string[];
 
   const issuesAndPRs = await getGitHub(
