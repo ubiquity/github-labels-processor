@@ -1,4 +1,3 @@
-import colorizeLabels from "../utils/colorize-labels";
 import filterLabels from "../utils/filter-labels";
 import { getAllLabels } from "../utils/get-labels";
 import args from "./cli-args";

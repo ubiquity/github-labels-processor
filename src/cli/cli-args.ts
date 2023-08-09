@@ -41,6 +41,12 @@ const optionDefinitions = [
     description:
       "Execute destructive command (e.g. delete label). Otherwise, just print the dry run.",
   },
+  {
+    name: "value",
+    type: String,
+    alias: "v",
+    description: "Pass in a value for a tool to use.",
+  },
 ];
 
 export default (function readCommandLineArgs() {
