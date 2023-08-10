@@ -8,9 +8,11 @@
     "start:priority": "tsx src/cli/cli-entry-wrapper.ts --regex ^Priority:.+ ",
     "format": "prettier src/ --write",
     "utils:remove-list": "tsx -e \"require('src/utils/clear-unused-labels/clear-unused-labels.ts').default();\"",
-    "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\""
+    "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\"",
+    "utils:toggle-label": "tsx src/cli/cli-entry-wrapper.ts --tool toggle-label -v ping"
   },
   "dependencies": {
+    "@octokit/rest": "^20.0.1",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
     "dotenv": "^16.0.3",
