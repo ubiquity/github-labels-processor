@@ -6,16 +6,15 @@ import { Label } from "./label";
 interface LabelLike extends Partial<Label> {}
 
 export async function updateLabel(
-  home: { owner: string; repository: string },
-  labelName: string,
-  labelNew: LabelLike
+  args: { owner: string; repository: string; value: string },
+  labelName: string
 ): Promise<IncomingMessage> {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${home.owner}/${
-        home.repository
+      path: `/repos/${args.owner}/${
+        args.repository
       }/labels/${encodeURIComponent(labelName)}`,
       method: "PATCH",
       headers: {
@@ -28,7 +27,6 @@ export async function updateLabel(
     const req = https.request(options, res => {
       if (res.statusCode !== 200) {
         if (res.statusCode === 404) {
-          console.trace({ home, labelName, labelNew });
           reject(new Error(`Label ${labelName} not found`));
           return;
         }
@@ -45,7 +43,7 @@ export async function updateLabel(
       reject(error);
     });
 
-    req.write(JSON.stringify(labelNew as LabelLike));
+    req.write(JSON.stringify({ color: args.value } as LabelLike));
 
     req.end();
   });

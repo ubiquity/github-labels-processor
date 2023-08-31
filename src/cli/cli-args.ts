@@ -31,6 +31,7 @@ const optionDefinitions = [
   {
     name: "tool",
     type: String,
+    alias: "t",
     description:
       "Pass in the selected labels and perform actions on those labels. Example: `--tool delete-labels` for `tools/delete-labels.ts`",
   },

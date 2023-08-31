@@ -10,8 +10,16 @@ import { updateLabel } from "../network/update-label";
 //   ededed: "grey",
 // };
 
-export default async function colorizeLabels(labels: Label[], args) {
-  labels.forEach(
-    async (label: Label) => await updateLabel(args, label.name, args)
-  );
+export default async function colorizeLabels(
+  labels: string,
+  args: {
+    owner: string;
+    repository: string;
+    value: string;
+  }
+) {
+  for (const label of labels) {
+    console.trace(label);
+    await updateLabel(args, label);
+  }
 }
