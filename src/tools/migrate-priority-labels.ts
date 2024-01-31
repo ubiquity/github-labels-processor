@@ -1,11 +1,11 @@
 import { log } from "../cli/logging";
 import _deleteLabels from "./delete-labels";
-import { checkIfLabelExists } from "./migrate-priority-labels/checkIfLabelExists";
-import { createNewLabel } from "./migrate-priority-labels/createNewLabel";
-import { getAllLabels } from "./migrate-priority-labels/getAllLabels";
+import { checkIfLabelExists } from "./migrate-priority-labels/check-if-label-exists";
+import { createNewLabel } from "./migrate-priority-labels/create-new-label";
+import { getAllLabels } from "./migrate-priority-labels/get-all-labels";
 import { priorityMapping } from "./migrate-priority-labels/priority-mapping";
 import { updateLabelName } from "./migrate-priority-labels/update-label-name";
-import { _updateIssueLabels } from "./migrate-priority-labels/_updateIssueLabels";
+import { _updateIssueLabels } from "./migrate-priority-labels/_update-issue-labels";
 
 export default async function migratePriorityLabels() {
   const allLabels = await getAllLabels();
