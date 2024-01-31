@@ -43,10 +43,10 @@ const optionDefinitions = [
       "Execute destructive command (e.g. delete label). Otherwise, just print the dry run.",
   },
   {
-    name: "value",
+    name: "to",
     type: String,
-    alias: "v",
-    description: "Pass in a value for a tool to use.",
+    // alias: "t",
+    description: "Used with the label rename tool. Select labels with the regex parameter, then rename them to the value passed into 'to'.",
   },
 ];
 

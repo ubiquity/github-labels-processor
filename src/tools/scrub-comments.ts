@@ -4,7 +4,7 @@ import { GitHubComment, GitHubIssue } from "../github-types";
 import { octokit } from "../utils/get-github-token";
 
 export default async function _scrubComments() {
-  const { owner, repository, execute, value } = Args;
+  const { owner, repository, execute } = Args;
   if (!execute) {
     log.info("dry run, not editing comments. Use `--execute` to run.");
     return;

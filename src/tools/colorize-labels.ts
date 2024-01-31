@@ -1,5 +1,5 @@
 import { GitHubLabel } from "../github-types";
-import { updateLabel } from "../network/update-label";
+import { updateLabelColor } from "../network/update-label-color";
 
 // const OWNER = 'ubiquity';
 // const REPO = 'pay.ubq.fi';
@@ -13,6 +13,6 @@ import { updateLabel } from "../network/update-label";
 export default async function colorizeLabels(labels: (string | GitHubLabel)[]) {
   for (const label of labels) {
     const labelName = typeof label === "string" ? label : label.name;
-    await updateLabel(labelName);
+    await updateLabelColor(labelName);
   }
 }

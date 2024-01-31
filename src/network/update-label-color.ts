@@ -2,7 +2,7 @@ import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { octokit } from "../utils/get-github-token";
 
-export async function updateLabel(labelName: string) {
+export async function updateLabelColor(labelName: string) {
   if (!Args.execute) {
     log.info("dry run, not deleting labels. Use `--execute` to delete labels");
     return;
