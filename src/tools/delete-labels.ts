@@ -1,4 +1,3 @@
-import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { removeLabel } from "../network/remove-label";
 
