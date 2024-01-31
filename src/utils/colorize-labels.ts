@@ -1,4 +1,3 @@
-import { Label } from "../network/label";
 import { updateLabel } from "../network/update-label";
 
 // const OWNER = 'ubiquity';
@@ -10,16 +9,8 @@ import { updateLabel } from "../network/update-label";
 //   ededed: "grey",
 // };
 
-export default async function colorizeLabels(
-  labels: string,
-  args: {
-    owner: string;
-    repository: string;
-    value: string;
-  }
-) {
+export default async function colorizeLabels(labels: string[]) {
   for (const label of labels) {
-    console.trace(label);
-    await updateLabel(args, label);
+    await updateLabel(label);
   }
 }

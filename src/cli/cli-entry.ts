@@ -1,8 +1,8 @@
+import fs from "fs";
 import filterLabels from "../utils/filter-labels";
 import { getAllLabels } from "../utils/get-labels";
-import args from "./cli-args";
+import { args } from "./cli-args";
 import { log } from "./logging";
-import fs from "fs";
 export default async function cliEntry() {
   // Check for required arguments.
   if (!args.owner || !args.repository) {
@@ -43,6 +43,6 @@ export default async function cliEntry() {
   // Select tool
   if (args.tool) {
     const tool = await import(`../tools/${args.tool}`);
-    return await tool.default(args, selectedBuffer);
+    return await tool.default(selectedBuffer);
   }
 }

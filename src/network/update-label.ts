@@ -1,14 +1,11 @@
-import { IncomingMessage, ServerResponse } from "http";
+import { IncomingMessage } from "http";
 import * as https from "https";
+import { args } from "../cli/cli-args";
 import { githubToken } from "../utils/get-github-token";
 import { Label } from "./label";
-
 interface LabelLike extends Partial<Label> {}
 
-export async function updateLabel(
-  args: { owner: string; repository: string; value: string },
-  labelName: string
-): Promise<IncomingMessage> {
+export async function updateLabel(labelName: string): Promise<IncomingMessage> {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
