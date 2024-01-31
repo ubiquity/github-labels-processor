@@ -6,4 +6,7 @@ if (githubToken === undefined) {
 }
 
 import { Octokit } from "@octokit/rest";
-export const octokit = new Octokit({ auth: githubToken });
+export const octokit = new Octokit({
+  auth: githubToken,
+  userAgent: "UbiquityGitHubLabelsProcessor/1.0.0",
+});
