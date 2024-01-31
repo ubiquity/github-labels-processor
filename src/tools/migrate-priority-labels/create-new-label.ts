@@ -12,9 +12,7 @@ export async function createNewLabel(labelExists: boolean, newLabel: string) {
         color: "efefef",
       });
     } else {
-      log.info(
-        `Label ${newLabel} already exists in the repository. Skipping creation.`
-      );
+      log.info(`Label ${newLabel} already exists in the repository. Skipping creation.`);
     }
   } else {
     log.info("dry run, not creating labels. Use `--execute` to run.");

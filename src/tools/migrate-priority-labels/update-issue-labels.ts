@@ -13,12 +13,8 @@ export async function updateIssueLabels(oldLabel: string, newLabel: string) {
 
   // Update each issue to have the new label
   for (const issue of issues.data) {
-    const labels = (issue.labels as GitHubLabel[]).map(label =>
-      label.name === oldLabel ? newLabel : label.name
-    );
-    log.info(
-      `Updating labels for issue number ${issue.number} from ${oldLabel} to ${newLabel}`
-    );
+    const labels = (issue.labels as GitHubLabel[]).map((label) => (label.name === oldLabel ? newLabel : label.name));
+    log.info(`Updating labels for issue number ${issue.number} from ${oldLabel} to ${newLabel}`);
     if (Args.execute) {
       await octokit.rest.issues.update({
         owner: Args.owner,

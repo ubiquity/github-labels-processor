@@ -9,9 +9,7 @@ export async function getAllLabels() {
     repo: Args.repository,
   });
 
-  log.info(
-    `Retrieved ${labels.length} labels from repository ${Args.repository}`
-  );
+  log.info(`Retrieved ${labels.length} labels from repository ${Args.repository}`);
 
   return labels;
 }

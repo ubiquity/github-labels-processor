@@ -2,11 +2,7 @@ import filterLabels from "../utils/filter-labels";
 import getLabels from "../utils/get-labels";
 import colorizeLabels from "./colorize-labels";
 
-export default async function resetColors(args: {
-  color?: string;
-  owner: string;
-  repository: string;
-}) {
+export default async function resetColors(args: { color?: string; owner: string; repository: string }) {
   // Get all labels.
   const allLabels = await getLabels();
   // do not select labels with `^Price:.+` regex

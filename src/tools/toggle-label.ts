@@ -19,14 +19,12 @@ export default async function _toggleLabel() {
     });
 
     for (const issue of issues) {
-      const currentLabels = (issue.labels as GitHubLabel[]).map(
-        label => label.name
-      );
+      const currentLabels = (issue.labels as GitHubLabel[]).map((label) => label.name);
 
       let updatedLabels;
 
       if (currentLabels.includes(labelToToggle)) {
-        updatedLabels = currentLabels.filter(label => label !== labelToToggle);
+        updatedLabels = currentLabels.filter((label) => label !== labelToToggle);
       } else {
         updatedLabels = [...currentLabels, labelToToggle];
       }

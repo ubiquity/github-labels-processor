@@ -8,9 +8,7 @@ export async function _updateIssueLabels(oldLabel: string, newLabel: string) {
     log.ok(`Successfully updated issue labels from ${oldLabel} to ${newLabel}`);
   } catch (error) {
     if (error instanceof Error) {
-      log.error(
-        `Failed to update issue label ${oldLabel} to ${newLabel}: ${error.message}`
-      );
+      log.error(`Failed to update issue label ${oldLabel} to ${newLabel}: ${error.message}`);
     } else {
       console.error(error);
     }

@@ -19,8 +19,7 @@ const optionDefinitions = [
     name: "color",
     type: String,
     alias: "c",
-    description:
-      "Color to use for the label. Must be a six character CSS color string, without the `#` prefix, like `ff0000`.",
+    description: "Color to use for the label. Must be a six character CSS color string, without the `#` prefix, like `ff0000`.",
   },
   {
     name: "regex",
@@ -32,15 +31,13 @@ const optionDefinitions = [
     name: "tool",
     type: String,
     alias: "t",
-    description:
-      "Pass in the selected labels and perform actions on those labels. Example: `--tool delete-labels` for `tools/delete-labels.ts`",
+    description: "Pass in the selected labels and perform actions on those labels. Example: `--tool delete-labels` for `tools/delete-labels.ts`",
   },
   {
     name: "execute",
     type: Boolean,
     alias: "x",
-    description:
-      "Execute destructive command (e.g. delete label). Otherwise, just print the dry run.",
+    description: "Execute destructive command (e.g. delete label). Otherwise, just print the dry run.",
   },
   {
     name: "to",

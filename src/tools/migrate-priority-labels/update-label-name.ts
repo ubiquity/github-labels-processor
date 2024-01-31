@@ -25,9 +25,7 @@ export async function updateLabelName(fromName: string, toName: string) {
     if ((error as Response).status === 404) {
       throw new Error(`Label ${fromName} not found`);
     } else if ((error as Response).status === 422) {
-      throw new Error(
-        `Label rename failed: A label with the name '${Args.to}' already exists.`
-      );
+      throw new Error(`Label rename failed: A label with the name '${Args.to}' already exists.`);
     }
 
     throw error;

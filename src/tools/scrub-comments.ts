@@ -65,9 +65,7 @@ export default async function _scrubComments() {
           // Edit the comment
 
           if (!Args.execute) {
-            log.info(
-              "dry run, not editing comments. Use `--execute` to edit comments"
-            );
+            log.info("dry run, not editing comments. Use `--execute` to edit comments");
             return;
           }
 

@@ -6,9 +6,7 @@ import { log } from "./logging";
 export default async function cliEntry() {
   // Check for required arguments.
   if (!Args.owner || !Args.repository) {
-    log.error(
-      "Missing required arguments: `owner`, `repository` (use -o, and -r)"
-    );
+    log.error("Missing required arguments: `owner`, `repository` (use -o, and -r)");
     process.exit(1);
   }
 
@@ -16,7 +14,7 @@ export default async function cliEntry() {
     log.info("No tool selected. Use `--tool` to select a tool.");
     const _tools = fs.readdirSync(`src/tools`);
     // remove .ts extension
-    const tools = _tools.map(tool => {
+    const tools = _tools.map((tool) => {
       if (tool.endsWith(`.ts`)) {
         return tool.slice(0, -3);
       }
@@ -35,7 +33,7 @@ export default async function cliEntry() {
 
   const selected = await filterLabels(labels, Args.regex);
 
-  const selectedBuffer = selected.map(label => label.name);
+  const selectedBuffer = selected.map((label) => label.name);
   log.ok(`Selected the following labels:\n\n${selectedBuffer.join("\n")}`);
 
   // Select tool

@@ -1,12 +1,9 @@
 export const singleItem = {
   url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102",
   repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-  labels_url:
-    "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/labels{/name}",
-  comments_url:
-    "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/comments",
-  events_url:
-    "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/events",
+  labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/labels{/name}",
+  comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/comments",
+  events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/events",
   html_url: "https://github.com/ubiquity/bounty-bot/pull/102",
   id: 1571654699,
   node_id: "PR_kwDOH92Z-c5JSqSQ",
@@ -21,17 +18,14 @@ export const singleItem = {
     url: "https://api.github.com/users/pavlovcik",
     html_url: "https://github.com/pavlovcik",
     followers_url: "https://api.github.com/users/pavlovcik/followers",
-    following_url:
-      "https://api.github.com/users/pavlovcik/following{/other_user}",
+    following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
     gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-    starred_url:
-      "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+    starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
     subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
     organizations_url: "https://api.github.com/users/pavlovcik/orgs",
     repos_url: "https://api.github.com/users/pavlovcik/repos",
     events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-    received_events_url:
-      "https://api.github.com/users/pavlovcik/received_events",
+    received_events_url: "https://api.github.com/users/pavlovcik/received_events",
     type: "User",
     site_admin: false,
   },
@@ -68,8 +62,7 @@ export const singleItem = {
     rocket: 0,
     eyes: 0,
   },
-  timeline_url:
-    "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/timeline",
+  timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/timeline",
   performed_via_github_app: null,
   state_reason: null,
 };
@@ -78,12 +71,9 @@ export default [
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/events",
     html_url: "https://github.com/ubiquity/bounty-bot/pull/102",
     id: 1571654699,
     node_id: "PR_kwDOH92Z-c5JSqSQ",
@@ -98,17 +88,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -145,20 +132,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/102/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/101",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/101",
     id: 1570362846,
     node_id: "I_kwDOH92Z-c5dmdXe",
@@ -173,17 +156,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -199,20 +179,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -284,20 +258,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/101/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/100",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/100",
     id: 1567995863,
     node_id: "I_kwDOH92Z-c5ddbfX",
@@ -312,16 +282,14 @@ export default [
       url: "https://api.github.com/users/rndquu",
       html_url: "https://github.com/rndquu",
       followers_url: "https://api.github.com/users/rndquu/followers",
-      following_url:
-        "https://api.github.com/users/rndquu/following{/other_user}",
+      following_url: "https://api.github.com/users/rndquu/following{/other_user}",
       gists_url: "https://api.github.com/users/rndquu/gists{/gist_id}",
       starred_url: "https://api.github.com/users/rndquu/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/rndquu/subscriptions",
       organizations_url: "https://api.github.com/users/rndquu/orgs",
       repos_url: "https://api.github.com/users/rndquu/repos",
       events_url: "https://api.github.com/users/rndquu/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/rndquu/received_events",
+      received_events_url: "https://api.github.com/users/rndquu/received_events",
       type: "User",
       site_admin: false,
     },
@@ -337,20 +305,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -402,20 +364,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/100/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/99",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/99",
     id: 1567994686,
     node_id: "I_kwDOH92Z-c5ddbM-",
@@ -430,16 +388,14 @@ export default [
       url: "https://api.github.com/users/rndquu",
       html_url: "https://github.com/rndquu",
       followers_url: "https://api.github.com/users/rndquu/followers",
-      following_url:
-        "https://api.github.com/users/rndquu/following{/other_user}",
+      following_url: "https://api.github.com/users/rndquu/following{/other_user}",
       gists_url: "https://api.github.com/users/rndquu/gists{/gist_id}",
       starred_url: "https://api.github.com/users/rndquu/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/rndquu/subscriptions",
       organizations_url: "https://api.github.com/users/rndquu/orgs",
       repos_url: "https://api.github.com/users/rndquu/repos",
       events_url: "https://api.github.com/users/rndquu/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/rndquu/received_events",
+      received_events_url: "https://api.github.com/users/rndquu/received_events",
       type: "User",
       site_admin: false,
     },
@@ -503,20 +459,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/99/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/98",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/98",
     id: 1567993799,
     node_id: "I_kwDOH92Z-c5dda_H",
@@ -531,16 +483,14 @@ export default [
       url: "https://api.github.com/users/rndquu",
       html_url: "https://github.com/rndquu",
       followers_url: "https://api.github.com/users/rndquu/followers",
-      following_url:
-        "https://api.github.com/users/rndquu/following{/other_user}",
+      following_url: "https://api.github.com/users/rndquu/following{/other_user}",
       gists_url: "https://api.github.com/users/rndquu/gists{/gist_id}",
       starred_url: "https://api.github.com/users/rndquu/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/rndquu/subscriptions",
       organizations_url: "https://api.github.com/users/rndquu/orgs",
       repos_url: "https://api.github.com/users/rndquu/repos",
       events_url: "https://api.github.com/users/rndquu/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/rndquu/received_events",
+      received_events_url: "https://api.github.com/users/rndquu/received_events",
       type: "User",
       site_admin: false,
     },
@@ -597,20 +547,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/98/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/97",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/97",
     id: 1567991828,
     node_id: "I_kwDOH92Z-c5ddagU",
@@ -625,16 +571,14 @@ export default [
       url: "https://api.github.com/users/rndquu",
       html_url: "https://github.com/rndquu",
       followers_url: "https://api.github.com/users/rndquu/followers",
-      following_url:
-        "https://api.github.com/users/rndquu/following{/other_user}",
+      following_url: "https://api.github.com/users/rndquu/following{/other_user}",
       gists_url: "https://api.github.com/users/rndquu/gists{/gist_id}",
       starred_url: "https://api.github.com/users/rndquu/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/rndquu/subscriptions",
       organizations_url: "https://api.github.com/users/rndquu/orgs",
       repos_url: "https://api.github.com/users/rndquu/repos",
       events_url: "https://api.github.com/users/rndquu/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/rndquu/received_events",
+      received_events_url: "https://api.github.com/users/rndquu/received_events",
       type: "User",
       site_admin: false,
     },
@@ -650,20 +594,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -693,20 +631,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/97/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/96",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/96",
     id: 1567990837,
     node_id: "I_kwDOH92Z-c5ddaQ1",
@@ -721,16 +655,14 @@ export default [
       url: "https://api.github.com/users/rndquu",
       html_url: "https://github.com/rndquu",
       followers_url: "https://api.github.com/users/rndquu/followers",
-      following_url:
-        "https://api.github.com/users/rndquu/following{/other_user}",
+      following_url: "https://api.github.com/users/rndquu/following{/other_user}",
       gists_url: "https://api.github.com/users/rndquu/gists{/gist_id}",
       starred_url: "https://api.github.com/users/rndquu/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/rndquu/subscriptions",
       organizations_url: "https://api.github.com/users/rndquu/orgs",
       repos_url: "https://api.github.com/users/rndquu/repos",
       events_url: "https://api.github.com/users/rndquu/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/rndquu/received_events",
+      received_events_url: "https://api.github.com/users/rndquu/received_events",
       type: "User",
       site_admin: false,
     },
@@ -746,20 +678,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -805,20 +731,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/96/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/95",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/95",
     id: 1565720552,
     node_id: "I_kwDOH92Z-c5dUv_o",
@@ -833,17 +755,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -859,18 +778,14 @@ export default [
       url: "https://api.github.com/users/0xcodercrane",
       html_url: "https://github.com/0xcodercrane",
       followers_url: "https://api.github.com/users/0xcodercrane/followers",
-      following_url:
-        "https://api.github.com/users/0xcodercrane/following{/other_user}",
+      following_url: "https://api.github.com/users/0xcodercrane/following{/other_user}",
       gists_url: "https://api.github.com/users/0xcodercrane/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/0xcodercrane/subscriptions",
+      starred_url: "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/0xcodercrane/subscriptions",
       organizations_url: "https://api.github.com/users/0xcodercrane/orgs",
       repos_url: "https://api.github.com/users/0xcodercrane/repos",
       events_url: "https://api.github.com/users/0xcodercrane/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/0xcodercrane/received_events",
+      received_events_url: "https://api.github.com/users/0xcodercrane/received_events",
       type: "User",
       site_admin: false,
     },
@@ -905,20 +820,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/95/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/91",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/91",
     id: 1559296266,
     node_id: "I_kwDOH92Z-c5c8PkK",
@@ -933,17 +844,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -959,20 +867,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -997,26 +899,21 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/91/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/77",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/77",
     id: 1534637387,
     node_id: "I_kwDOH92Z-c5beLVL",
     number: 77,
-    title:
-      "Calculate time with precision (Dynamic Price Calculation vs Lookup Table)",
+    title: "Calculate time with precision (Dynamic Price Calculation vs Lookup Table)",
     user: {
       login: "pavlovcik",
       id: 4975670,
@@ -1026,17 +923,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1052,20 +946,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1199,20 +1087,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/77/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/76",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/events",
     html_url: "https://github.com/ubiquity/bounty-bot/pull/76",
     id: 1529683674,
     node_id: "PR_kwDOH92Z-c5HMP0U",
@@ -1227,17 +1111,14 @@ export default [
       url: "https://api.github.com/users/ManyRios",
       html_url: "https://github.com/ManyRios",
       followers_url: "https://api.github.com/users/ManyRios/followers",
-      following_url:
-        "https://api.github.com/users/ManyRios/following{/other_user}",
+      following_url: "https://api.github.com/users/ManyRios/following{/other_user}",
       gists_url: "https://api.github.com/users/ManyRios/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ManyRios/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/ManyRios/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/ManyRios/subscriptions",
       organizations_url: "https://api.github.com/users/ManyRios/orgs",
       repos_url: "https://api.github.com/users/ManyRios/repos",
       events_url: "https://api.github.com/users/ManyRios/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ManyRios/received_events",
+      received_events_url: "https://api.github.com/users/ManyRios/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1274,20 +1155,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/76/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/73",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/73",
     id: 1518609694,
     node_id: "I_kwDOH92Z-c5ahCUe",
@@ -1302,17 +1179,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1328,18 +1202,14 @@ export default [
       url: "https://api.github.com/users/0xcodercrane",
       html_url: "https://github.com/0xcodercrane",
       followers_url: "https://api.github.com/users/0xcodercrane/followers",
-      following_url:
-        "https://api.github.com/users/0xcodercrane/following{/other_user}",
+      following_url: "https://api.github.com/users/0xcodercrane/following{/other_user}",
       gists_url: "https://api.github.com/users/0xcodercrane/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/0xcodercrane/subscriptions",
+      starred_url: "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/0xcodercrane/subscriptions",
       organizations_url: "https://api.github.com/users/0xcodercrane/orgs",
       repos_url: "https://api.github.com/users/0xcodercrane/repos",
       events_url: "https://api.github.com/users/0xcodercrane/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/0xcodercrane/received_events",
+      received_events_url: "https://api.github.com/users/0xcodercrane/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1410,20 +1280,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/73/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/56",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/56",
     id: 1505570426,
     node_id: "I_kwDOH92Z-c5ZvS56",
@@ -1438,17 +1304,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1464,20 +1327,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1505,20 +1362,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/56/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/55",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/55",
     id: 1505569864,
     node_id: "I_kwDOH92Z-c5ZvSxI",
@@ -1533,17 +1386,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1559,20 +1409,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1600,20 +1444,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/55/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/49",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/events",
     html_url: "https://github.com/ubiquity/bounty-bot/pull/49",
     id: 1473056929,
     node_id: "PR_kwDOH92Z-c5EJwB_",
@@ -1628,19 +1468,14 @@ export default [
       url: "https://api.github.com/users/3commascapital",
       html_url: "https://github.com/3commascapital",
       followers_url: "https://api.github.com/users/3commascapital/followers",
-      following_url:
-        "https://api.github.com/users/3commascapital/following{/other_user}",
+      following_url: "https://api.github.com/users/3commascapital/following{/other_user}",
       gists_url: "https://api.github.com/users/3commascapital/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/3commascapital/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/3commascapital/subscriptions",
+      starred_url: "https://api.github.com/users/3commascapital/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/3commascapital/subscriptions",
       organizations_url: "https://api.github.com/users/3commascapital/orgs",
       repos_url: "https://api.github.com/users/3commascapital/repos",
-      events_url:
-        "https://api.github.com/users/3commascapital/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/3commascapital/received_events",
+      events_url: "https://api.github.com/users/3commascapital/events{/privacy}",
+      received_events_url: "https://api.github.com/users/3commascapital/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1677,20 +1512,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/49/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/45",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/45",
     id: 1471714629,
     node_id: "I_kwDOH92Z-c5XuJVF",
@@ -1705,18 +1536,14 @@ export default [
       url: "https://api.github.com/users/0xcodercrane",
       html_url: "https://github.com/0xcodercrane",
       followers_url: "https://api.github.com/users/0xcodercrane/followers",
-      following_url:
-        "https://api.github.com/users/0xcodercrane/following{/other_user}",
+      following_url: "https://api.github.com/users/0xcodercrane/following{/other_user}",
       gists_url: "https://api.github.com/users/0xcodercrane/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/0xcodercrane/subscriptions",
+      starred_url: "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/0xcodercrane/subscriptions",
       organizations_url: "https://api.github.com/users/0xcodercrane/orgs",
       repos_url: "https://api.github.com/users/0xcodercrane/repos",
       events_url: "https://api.github.com/users/0xcodercrane/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/0xcodercrane/received_events",
+      received_events_url: "https://api.github.com/users/0xcodercrane/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1732,20 +1559,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1780,26 +1601,21 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/45/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/42",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/42",
     id: 1471502303,
     node_id: "I_kwDOH92Z-c5XtVff",
     number: 42,
-    title:
-      "Registering wallet addresses and associating it to each GitHub username",
+    title: "Registering wallet addresses and associating it to each GitHub username",
     user: {
       login: "0xcodercrane",
       id: 108444211,
@@ -1809,18 +1625,14 @@ export default [
       url: "https://api.github.com/users/0xcodercrane",
       html_url: "https://github.com/0xcodercrane",
       followers_url: "https://api.github.com/users/0xcodercrane/followers",
-      following_url:
-        "https://api.github.com/users/0xcodercrane/following{/other_user}",
+      following_url: "https://api.github.com/users/0xcodercrane/following{/other_user}",
       gists_url: "https://api.github.com/users/0xcodercrane/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/0xcodercrane/subscriptions",
+      starred_url: "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/0xcodercrane/subscriptions",
       organizations_url: "https://api.github.com/users/0xcodercrane/orgs",
       repos_url: "https://api.github.com/users/0xcodercrane/repos",
       events_url: "https://api.github.com/users/0xcodercrane/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/0xcodercrane/received_events",
+      received_events_url: "https://api.github.com/users/0xcodercrane/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1836,20 +1648,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1889,20 +1695,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/42/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/40",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/40",
     id: 1471410945,
     node_id: "I_kwDOH92Z-c5Xs_MB",
@@ -1917,18 +1719,14 @@ export default [
       url: "https://api.github.com/users/0xcodercrane",
       html_url: "https://github.com/0xcodercrane",
       followers_url: "https://api.github.com/users/0xcodercrane/followers",
-      following_url:
-        "https://api.github.com/users/0xcodercrane/following{/other_user}",
+      following_url: "https://api.github.com/users/0xcodercrane/following{/other_user}",
       gists_url: "https://api.github.com/users/0xcodercrane/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/0xcodercrane/subscriptions",
+      starred_url: "https://api.github.com/users/0xcodercrane/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/0xcodercrane/subscriptions",
       organizations_url: "https://api.github.com/users/0xcodercrane/orgs",
       repos_url: "https://api.github.com/users/0xcodercrane/repos",
       events_url: "https://api.github.com/users/0xcodercrane/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/0xcodercrane/received_events",
+      received_events_url: "https://api.github.com/users/0xcodercrane/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1944,17 +1742,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -1979,20 +1774,16 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/40/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },
   {
     url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/13",
     repository_url: "https://api.github.com/repos/ubiquity/bounty-bot",
-    labels_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/labels{/name}",
-    comments_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/comments",
-    events_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/events",
+    labels_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/labels{/name}",
+    comments_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/comments",
+    events_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/events",
     html_url: "https://github.com/ubiquity/bounty-bot/issues/13",
     id: 1442647265,
     node_id: "I_kwDOH92Z-c5V_Qzh",
@@ -2007,17 +1798,14 @@ export default [
       url: "https://api.github.com/users/pavlovcik",
       html_url: "https://github.com/pavlovcik",
       followers_url: "https://api.github.com/users/pavlovcik/followers",
-      following_url:
-        "https://api.github.com/users/pavlovcik/following{/other_user}",
+      following_url: "https://api.github.com/users/pavlovcik/following{/other_user}",
       gists_url: "https://api.github.com/users/pavlovcik/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
+      starred_url: "https://api.github.com/users/pavlovcik/starred{/owner}{/repo}",
       subscriptions_url: "https://api.github.com/users/pavlovcik/subscriptions",
       organizations_url: "https://api.github.com/users/pavlovcik/orgs",
       repos_url: "https://api.github.com/users/pavlovcik/repos",
       events_url: "https://api.github.com/users/pavlovcik/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/pavlovcik/received_events",
+      received_events_url: "https://api.github.com/users/pavlovcik/received_events",
       type: "User",
       site_admin: false,
     },
@@ -2033,20 +1821,14 @@ export default [
       url: "https://api.github.com/users/ubiquity-bounties",
       html_url: "https://github.com/ubiquity-bounties",
       followers_url: "https://api.github.com/users/ubiquity-bounties/followers",
-      following_url:
-        "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
-      gists_url:
-        "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
-      starred_url:
-        "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
-      subscriptions_url:
-        "https://api.github.com/users/ubiquity-bounties/subscriptions",
+      following_url: "https://api.github.com/users/ubiquity-bounties/following{/other_user}",
+      gists_url: "https://api.github.com/users/ubiquity-bounties/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/ubiquity-bounties/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/ubiquity-bounties/subscriptions",
       organizations_url: "https://api.github.com/users/ubiquity-bounties/orgs",
       repos_url: "https://api.github.com/users/ubiquity-bounties/repos",
-      events_url:
-        "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
-      received_events_url:
-        "https://api.github.com/users/ubiquity-bounties/received_events",
+      events_url: "https://api.github.com/users/ubiquity-bounties/events{/privacy}",
+      received_events_url: "https://api.github.com/users/ubiquity-bounties/received_events",
       type: "User",
       site_admin: false,
     },
@@ -2110,8 +1892,7 @@ export default [
       rocket: 0,
       eyes: 0,
     },
-    timeline_url:
-      "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/timeline",
+    timeline_url: "https://api.github.com/repos/ubiquity/bounty-bot/issues/13/timeline",
     performed_via_github_app: null,
     state_reason: null,
   },

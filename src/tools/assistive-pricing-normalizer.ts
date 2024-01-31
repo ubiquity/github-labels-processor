@@ -30,15 +30,7 @@ export default async function assistivePricingLabelsNormalizer() {
 
   Args.color = "ededed";
   await resetColors(Object.values(priorityMapping));
-  await resetColors([
-    "Time: <1 Hour",
-    "Time: <2 Hours",
-    "Time: <4 Hours",
-    "Time: <1 Day",
-    "Time: <1 Week",
-    "Time: <2 Weeks",
-    "Time: <1 Month",
-  ]);
+  await resetColors(["Time: <1 Hour", "Time: <2 Hours", "Time: <4 Hours", "Time: <1 Day", "Time: <1 Week", "Time: <2 Weeks", "Time: <1 Month"]);
 
   await deletePriceRangeLabels(allLabels);
   // Filter for `Price: ` labels.
@@ -51,10 +43,8 @@ export default async function assistivePricingLabelsNormalizer() {
 
 async function deletePriceRangeLabels(allLabels: GitHubLabel[]) {
   const plusSignLabelRegex = /^Price:\s\d+(\.\d+)?\+\sUSD$/; // regex to match labels with a plus sign
-  const rangePriceLabels = allLabels.filter(label =>
-    plusSignLabelRegex.test(label.name)
-  );
-  await _deleteLabels(rangePriceLabels.map(label => label.name));
+  const rangePriceLabels = allLabels.filter((label) => plusSignLabelRegex.test(label.name));
+  await _deleteLabels(rangePriceLabels.map((label) => label.name));
 }
 
 async function resetColors(labels: string[]) {

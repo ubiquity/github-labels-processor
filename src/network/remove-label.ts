@@ -12,9 +12,7 @@ export async function removeLabel(label: string) {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${Args.owner}/${
-        Args.repository
-      }/labels/${encodeURIComponent(label)}`,
+      path: `/repos/${Args.owner}/${Args.repository}/labels/${encodeURIComponent(label)}`,
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +21,7 @@ export async function removeLabel(label: string) {
       },
     };
 
-    const req = https.request(options, res => {
+    const req = https.request(options, (res) => {
       if (res.statusCode !== 204) {
         reject(new Error(`Request failed with status code ${res.statusCode}`));
         return;
@@ -33,7 +31,7 @@ export async function removeLabel(label: string) {
       res.on("end", () => resolve(undefined));
     });
 
-    req.on("error", error => {
+    req.on("error", (error) => {
       reject(error);
     });
 

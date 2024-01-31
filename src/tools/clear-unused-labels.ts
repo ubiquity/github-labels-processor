@@ -28,11 +28,9 @@ export default async function clearUnusedLabels(selected: string[]) {
 async function getUsedLabelsWithCount(): Promise<Map<string, number>> {
   const usedLabels = [] as string[];
 
-  const issuesAndPRs = await getGitHub(
-    `/repos/${Args.owner}/${Args.repository}/issues?per_page=1000`
-  );
+  const issuesAndPRs = await getGitHub(`/repos/${Args.owner}/${Args.repository}/issues?per_page=1000`);
 
-  for (const item of issuesAndPRs as typeof singleItem[]) {
+  for (const item of issuesAndPRs as (typeof singleItem)[]) {
     item.labels.forEach((label: GitHubLabel) => {
       usedLabels.push(label.name);
     });
