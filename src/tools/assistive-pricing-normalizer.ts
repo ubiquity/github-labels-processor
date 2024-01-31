@@ -12,7 +12,7 @@ import { priorityMapping } from "./migrate-priority-labels/priority-mapping";
 import { updateLabelName } from "./migrate-priority-labels/update-label-name";
 import { _updateIssueLabels } from "./migrate-priority-labels/_update-issue-labels";
 
-export default async function migratePriorityLabels() {
+export default async function assistivePricingLabelsNormalizer() {
   const allLabels = await getAllLabels();
 
   for (const [oldLabel, newLabel] of Object.entries(priorityMapping)) {
@@ -42,7 +42,8 @@ export default async function migratePriorityLabels() {
 
   await deletePriceRangeLabels(allLabels);
   // Filter for `Price: ` labels.
-  const priceLabels = await filterLabels(allLabels, `^Price:.+`);
+  const allLabelsAfterDeletion = await getAllLabels();
+  const priceLabels = await filterLabels(allLabelsAfterDeletion, `^Price:.+`);
   // Set `Price: ` labels to green.
   Args.color = "1f883d";
   await colorizeLabels(priceLabels);
