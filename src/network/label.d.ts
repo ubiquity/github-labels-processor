@@ -1,4 +1,4 @@
-export interface Label {
+export interface GitHubLabel {
   id: number;
   node_id: string;
   url: string;

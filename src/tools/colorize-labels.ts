@@ -1,12 +1,16 @@
-import { Label } from "../network/label";
-import colorizeLabels from "../utils/colorize-labels";
+import { updateLabel } from "../network/update-label";
 
-export default async function _colorizeLabels(
-  args: { color: string },
-  selected: Label[]
-) {
-  // Colorize labels.
-  if (args.color) {
-    await colorizeLabels(selected, args);
+// const OWNER = 'ubiquity';
+// const REPO = 'pay.ubq.fi';
+// const regex = '^Price:.+';
+
+// const GitHubReferenceColors = {
+//   "1f883d": "green",
+//   ededed: "grey",
+// };
+
+export default async function colorizeLabels(labels: string[]) {
+  for (const label of labels) {
+    await updateLabel(label);
   }
 }

@@ -31,6 +31,7 @@ const optionDefinitions = [
   {
     name: "tool",
     type: String,
+    alias: "t",
     description:
       "Pass in the selected labels and perform actions on those labels. Example: `--tool delete-labels` for `tools/delete-labels.ts`",
   },
@@ -49,7 +50,7 @@ const optionDefinitions = [
   },
 ];
 
-export default (function readCommandLineArgs() {
+export const Args = (function readCommandLineArgs() {
   const options = commandLineArgs(optionDefinitions);
   if (options.help) {
     displayHelpMenu();

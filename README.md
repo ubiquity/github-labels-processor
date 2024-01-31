@@ -28,18 +28,10 @@ Options
 
 Note: you must include the owner and repository name in the command line arguments, or it will throw an error.
 
-### Tool: Reset Labels to Default Colors
-
-It will reset all labels to grey, and highlight `Price: ` labels with green.
+### Example
 
 ```sh
-yarn tools:reset-colors --owner ubiquity --repository=github-labels-processor
+yarn start --tool colorize-labels --owner ubiquity --repository devpool-directory --color ededed
 ```
 
-### Examples
-
-If you would like to set all of the `Priority: ` labels to a specific color, you can run
-
-```sh
-yarn start:priority --owner ubiquity --repository github-labels-processor --color=000000
-```
+Check the `src/tools` directory for more tools.

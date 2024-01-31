@@ -1,21 +1,22 @@
-import { IncomingMessage, ServerResponse } from "http";
+import { IncomingMessage } from "http";
 import * as https from "https";
+import { Args } from "../cli/cli-args";
+import { log } from "../cli/logging";
 import { githubToken } from "../utils/get-github-token";
-import { Label } from "./label";
+import { GitHubLabel } from "./label";
+interface LabelLike extends Partial<GitHubLabel> {}
 
-interface LabelLike extends Partial<Label> {}
-
-export async function updateLabel(
-  home: { owner: string; repository: string },
-  labelName: string,
-  labelNew: LabelLike
-): Promise<IncomingMessage> {
+export async function updateLabel(labelName: string) {
+  if (!Args.execute) {
+    log.info("dry run, not deleting labels. Use `--execute` to delete labels");
+    return;
+  }
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${home.owner}/${
-        home.repository
+      path: `/repos/${Args.owner}/${
+        Args.repository
       }/labels/${encodeURIComponent(labelName)}`,
       method: "PATCH",
       headers: {
@@ -28,7 +29,6 @@ export async function updateLabel(
     const req = https.request(options, res => {
       if (res.statusCode !== 200) {
         if (res.statusCode === 404) {
-          console.trace({ home, labelName, labelNew });
           reject(new Error(`Label ${labelName} not found`));
           return;
         }
@@ -45,7 +45,7 @@ export async function updateLabel(
       reject(error);
     });
 
-    req.write(JSON.stringify(labelNew as LabelLike));
+    req.write(JSON.stringify({ color: Args.color } as LabelLike));
 
     req.end();
   });

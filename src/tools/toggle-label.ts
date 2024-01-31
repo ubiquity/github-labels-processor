@@ -1,33 +1,31 @@
-import { Label } from "../network/label";
 import { Octokit } from "@octokit/rest";
+import { GitHubLabel } from "../network/label";
 
-import { githubToken } from "../utils/get-github-token";
+import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
+import { githubToken } from "../utils/get-github-token";
 
-export default async function _toggleLabel(args: {
-  owner: string;
-  repository: string;
-  execute?: boolean;
-  value?: string;
-}) {
-  if (!args.value) {
-    log.error("No value provided for label to toggle");
+export default async function _toggleLabel() {
+  if (!Args.name) {
+    log.error("No name provided for label to toggle");
     return;
   }
 
-  const labelToToggle = args.value;
+  const labelToToggle = Args.name;
 
   const octokit = new Octokit({ auth: githubToken });
 
   try {
     const issues = await octokit.paginate(octokit.issues.listForRepo, {
-      owner: args.owner,
-      repo: args.repository,
+      owner: Args.owner,
+      repo: Args.repository,
       state: "open",
     });
 
     for (const issue of issues) {
-      const currentLabels = issue.labels.map(label => label.name);
+      const currentLabels = (issue.labels as GitHubLabel[]).map(
+        label => label.name
+      );
 
       let updatedLabels;
 
@@ -38,8 +36,8 @@ export default async function _toggleLabel(args: {
       }
 
       await octokit.issues.update({
-        owner: args.owner,
-        repo: args.repository,
+        owner: Args.owner,
+        repo: Args.repository,
         issue_number: issue.number,
         labels: updatedLabels,
       });
