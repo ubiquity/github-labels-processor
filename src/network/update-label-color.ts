@@ -1,22 +1,25 @@
-import { Args } from "../cli/cli-args";
+import { ARGS } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { octokit } from "../utils/get-github-token";
+const HTTP_OK = 200;
 
 export async function updateLabelColor(labelName: string) {
-  if (!Args.execute) {
+  if (!ARGS.execute) {
     log.info("dry run, not deleting labels. Use `--execute` to delete labels");
     return;
   }
 
   try {
     const response = await octokit.rest.issues.updateLabel({
-      owner: Args.owner,
-      repo: Args.repository,
+      owner: ARGS.owner,
+      repo: ARGS.repository,
       name: labelName,
-      color: Args.color,
+      color: ARGS.color,
     });
 
-    if (response.status !== 200) {
+    const status = response.status;
+
+    if (status !== HTTP_OK) {
       throw new Error(`Request failed with status code ${response.status}`);
     }
 

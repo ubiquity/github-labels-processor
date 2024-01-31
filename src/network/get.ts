@@ -28,9 +28,9 @@ export async function getGitHub(path: string) {
           resolve(JSON.parse(data));
         });
       })
-      .on("error", (error) => reject);
+      .on("error", reject);
 
-    request.on("error", (e) => console.error);
+    request.on("error", console.error);
     request.end();
   });
 }

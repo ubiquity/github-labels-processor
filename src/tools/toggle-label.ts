@@ -1,20 +1,20 @@
-import { Args } from "../cli/cli-args";
+import { ARGS } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { GitHubLabel } from "../github-types";
 import { octokit } from "../utils/get-github-token";
 
-export default async function _toggleLabel() {
-  if (!Args.name) {
+export default async function toggleLabelWrapper() {
+  if (!ARGS.name) {
     log.error("No name provided for label to toggle");
     return;
   }
 
-  const labelToToggle = Args.name;
+  const labelToToggle = ARGS.name;
 
   try {
     const issues = await octokit.paginate(octokit.issues.listForRepo, {
-      owner: Args.owner,
-      repo: Args.repository,
+      owner: ARGS.owner,
+      repo: ARGS.repository,
       state: "open",
     });
 
@@ -30,8 +30,8 @@ export default async function _toggleLabel() {
       }
 
       await octokit.issues.update({
-        owner: Args.owner,
-        repo: Args.repository,
+        owner: ARGS.owner,
+        repo: ARGS.repository,
         issue_number: issue.number,
         labels: updatedLabels,
       });

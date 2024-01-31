@@ -1,13 +1,13 @@
-import { Args } from "../../cli/cli-args";
+import { ARGS } from "../../cli/cli-args";
 import { log } from "../../cli/logging";
 import { octokit } from "../../utils/get-github-token";
 
 export async function createNewLabel(labelExists: boolean, newLabel: string) {
-  if (Args.execute) {
+  if (ARGS.execute) {
     if (!labelExists) {
       await octokit.rest.issues.createLabel({
-        owner: Args.owner,
-        repo: Args.repository,
+        owner: ARGS.owner,
+        repo: ARGS.repository,
         name: newLabel,
         color: "efefef",
       });

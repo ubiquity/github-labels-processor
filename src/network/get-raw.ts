@@ -26,9 +26,9 @@ export async function getGitHubRaw(path: string) {
         res.on("data", (chunk) => (data += chunk));
         res.on("end", () => resolve(res));
       })
-      .on("error", (error) => reject);
+      .on("error", reject);
 
-    request.on("error", (e) => console.error);
+    request.on("error", console.error);
     request.end();
   });
 }

@@ -47,7 +47,7 @@ const optionDefinitions = [
   },
 ];
 
-export const Args = (function readCommandLineArgs() {
+export const ARGS = (function readCommandLineArgs() {
   const options = commandLineArgs(optionDefinitions);
   if (options.help) {
     displayHelpMenu();
