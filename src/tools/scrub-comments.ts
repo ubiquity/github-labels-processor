@@ -87,6 +87,10 @@ export default async function _scrubComments() {
 
     console.log("Finished editing comments.");
   } catch (error) {
-    log.error(error.message);
+    if (error instanceof Error) {
+      log.error(error.message);
+    } else {
+      log.error(JSON.stringify(error));
+    }
   }
 }

@@ -1,6 +1,6 @@
 import fs from "fs";
 import filterLabels from "../utils/filter-labels";
-import { getAllLabels } from "../utils/get-labels";
+import getLabels from "../utils/get-labels";
 import { Args } from "./cli-args";
 import { log } from "./logging";
 export default async function cliEntry() {
@@ -26,7 +26,7 @@ export default async function cliEntry() {
   }
 
   // Get all labels.
-  const labels = await getAllLabels(
+  const labels = await getLabels(
     Args as { owner: string; repository: string }
   );
 

@@ -2,8 +2,8 @@ import { IncomingMessage } from "http";
 import * as https from "https";
 import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
+import { GitHubLabel } from "../github-types";
 import { githubToken } from "../utils/get-github-token";
-import { GitHubLabel } from "./label";
 interface LabelLike extends Partial<GitHubLabel> {}
 
 export async function updateLabel(labelName: string) {

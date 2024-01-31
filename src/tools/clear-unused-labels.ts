@@ -1,7 +1,7 @@
 import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
+import { GitHubLabel } from "../github-types";
 import { getGitHub } from "../network/get";
-import { GitHubLabel } from "../network/label";
 import { singleItem } from "../utils/example-response";
 import _deleteLabels from "./delete-labels";
 

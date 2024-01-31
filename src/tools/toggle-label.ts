@@ -1,8 +1,8 @@
 import { Octokit } from "@octokit/rest";
-import { GitHubLabel } from "../network/label";
 
 import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
+import { GitHubLabel } from "../github-types";
 import { githubToken } from "../utils/get-github-token";
 
 export default async function _toggleLabel() {

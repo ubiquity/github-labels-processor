@@ -1,3 +1,4 @@
+import { GitHubLabel } from "../github-types";
 import { updateLabel } from "../network/update-label";
 
 // const OWNER = 'ubiquity';
@@ -9,8 +10,9 @@ import { updateLabel } from "../network/update-label";
 //   ededed: "grey",
 // };
 
-export default async function colorizeLabels(labels: string[]) {
+export default async function colorizeLabels(labels: (string | GitHubLabel)[]) {
   for (const label of labels) {
-    await updateLabel(label);
+    const labelName = typeof label === "string" ? label : label.name;
+    await updateLabel(labelName);
   }
 }

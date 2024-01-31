@@ -1,6 +1,6 @@
-import colorizeLabels from "../utils/colorize-labels";
 import filterLabels from "../utils/filter-labels";
-import { getAllLabels } from "../utils/get-labels";
+import getLabels from "../utils/get-labels";
+import colorizeLabels from "./colorize-labels";
 
 export default async function resetColors(args: {
   color?: string;
@@ -8,17 +8,17 @@ export default async function resetColors(args: {
   repository: string;
 }) {
   // Get all labels.
-  const allLabels = await getAllLabels(args);
+  const allLabels = await getLabels(args);
   // do not select labels with `^Price:.+` regex
   const notPriceLabels = await filterLabels(allLabels, `^(?!Price:.+).+`);
 
   // Default to grey color.
   args.color = "ededed";
-  await colorizeLabels(notPriceLabels, args);
+  await colorizeLabels(notPriceLabels);
 
   // Filter for `Price: ` labels.
   const priceLabels = await filterLabels(allLabels, `^Price:.+`);
   // Set `Price: ` labels to green.
   args.color = "1f883d";
-  await colorizeLabels(priceLabels, args);
+  await colorizeLabels(priceLabels);
 }
