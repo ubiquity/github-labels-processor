@@ -6,25 +6,67 @@
     "start:price": "tsx src/cli/cli-entry-wrapper.ts --regex ^Price:.+ ",
     "start:time": "tsx src/cli/cli-entry-wrapper.ts --regex ^Time:.+ ",
     "start:priority": "tsx src/cli/cli-entry-wrapper.ts --regex ^Priority:.+ ",
-    "format": "prettier src/ --write",
     "utils:remove-list": "tsx -e \"require('src/utils/clear-unused-labels/clear-unused-labels.ts').default();\"",
     "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\"",
-    "utils:toggle-label": "tsx src/cli/cli-entry-wrapper.ts --tool toggle-label -v ping"
+    "utils:toggle-label": "tsx src/cli/cli-entry-wrapper.ts --tool toggle-label -v ping",
+    "format": "run-s format:prettier format:lint",
+    "format:lint": "eslint --fix .",
+    "format:prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.1",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "https": "^1.0.0",
     "prettier": "^2.8.1",
     "typescript": "^4.9.4"
   },
+  "engines": {
+    "node": ">=20.10.0"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@types/command-line-args": "^5.2.0",
     "@types/command-line-usage": "^5.0.2",
-    "@types/node": "^18.11.17",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "esbuild": "^0.19.8",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "husky": "^8.0.3",
+    "knip": "^3.3.0",
+    "lint-staged": "^15.1.0",
     "nodemon": "^2.0.20",
-    "tsx": "^3.12.1"
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.2"
+  },
+  "keywords": [
+    "typescript",
+    "template",
+    "dao",
+    "ubiquity",
+    "open-source"
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "yarn prettier --write",
+      "eslint --fix"
+    ],
+    "src/**.{ts,json}": [
+      "cspell"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

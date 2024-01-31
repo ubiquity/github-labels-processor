@@ -1,2 +1,10 @@
 node_modules
 .yarn
+# macOS
+.DS_Store
+# node
+# yarn2
+.pnp.cjs
+.pnp.loader.mjs
+static/dist
+.env
