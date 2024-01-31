@@ -6,13 +6,3 @@ export type GitHubComment =
   Endpoints["GET /repos/{owner}/{repo}/issues/{issue_number}/comments"]["response"]["data"][0];
 export type GitHubLabel =
   Endpoints["GET /repos/{owner}/{repo}/labels"]["response"]["data"][0];
-
-// export interface GitHubLabel {
-//   id: number;
-//   node_id: string;
-//   url: string;
-//   name: string;
-//   color: string;
-//   default: boolean;
-//   description: null | string;
-// }

@@ -1,6 +1,9 @@
 import { GitHubLabel } from "../github-types";
 
-export default async function filterLabels(labels: GitHubLabel[], regex: string) {
+export default async function filterLabels(
+  labels: GitHubLabel[],
+  regex: string
+) {
   const SEARCH_QUERY_REGEX = new RegExp(regex); // "^Price:.+USDC$"
 
   const results = [] as GitHubLabel[];

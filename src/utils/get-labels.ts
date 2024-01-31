@@ -2,7 +2,6 @@ import { Args } from "../cli/cli-args";
 import { GitHubLabel } from "../github-types";
 import { octokit } from "./get-github-token";
 
-
 export default async function getLabels(): Promise<GitHubLabel[]> {
   const labelsResponse = await octokit.paginate(
     octokit.rest.issues.listLabelsForRepo,

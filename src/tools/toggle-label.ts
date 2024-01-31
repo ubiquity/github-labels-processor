@@ -1,4 +1,3 @@
-
 import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { GitHubLabel } from "../github-types";
@@ -11,7 +10,6 @@ export default async function _toggleLabel() {
   }
 
   const labelToToggle = Args.name;
-
 
   try {
     const issues = await octokit.paginate(octokit.issues.listForRepo, {
