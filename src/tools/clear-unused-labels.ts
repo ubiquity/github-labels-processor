@@ -1,18 +1,12 @@
+import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { getGitHub } from "../network/get";
-import { Label } from "../network/label";
+import { GitHubLabel } from "../network/label";
 import { singleItem } from "../utils/example-response";
 import _deleteLabels from "./delete-labels";
 
-export default async function clearUnusedLabels(
-  args: {
-    owner: string;
-    repository: string;
-    execute?: boolean;
-  },
-  selected: string[]
-) {
-  const usedLabelsWithCount = await getUsedLabelsWithCount(args);
+export default async function clearUnusedLabels(selected: string[]) {
+  const usedLabelsWithCount = await getUsedLabelsWithCount();
 
   // compare selected labels with used labels
   // delete selected labels that are not used
@@ -28,21 +22,18 @@ export default async function clearUnusedLabels(
     return;
   }
 
-  await _deleteLabels(args, unusedLabels);
+  await _deleteLabels(unusedLabels);
 }
 
-async function getUsedLabelsWithCount(args: {
-  owner: string;
-  repository: string;
-}): Promise<Map<string, number>> {
+async function getUsedLabelsWithCount(): Promise<Map<string, number>> {
   const usedLabels = [] as string[];
 
   const issuesAndPRs = await getGitHub(
-    `/repos/${args.owner}/${args.repository}/issues?per_page=1000`
+    `/repos/${Args.owner}/${Args.repository}/issues?per_page=1000`
   );
 
   for (const item of issuesAndPRs as typeof singleItem[]) {
-    item.labels.forEach((label: Label) => {
+    item.labels.forEach((label: GitHubLabel) => {
       usedLabels.push(label.name);
     });
   }

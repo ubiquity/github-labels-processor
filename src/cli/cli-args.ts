@@ -1,9 +1,6 @@
 import commandLineArgs from "command-line-args";
 import commandLineUsage from "command-line-usage";
-type OptionDefinitions = typeof optionDefinitions;
-export type CommandLineArgs = {
-  [K in OptionDefinitions[number]["name"]]: string | boolean;
-};
+
 const optionDefinitions = [
   { name: "help", type: Boolean, alias: "?", description: "Help menu." },
   {
@@ -53,7 +50,7 @@ const optionDefinitions = [
   },
 ];
 
-export const args = (function readCommandLineArgs() {
+export const Args = (function readCommandLineArgs() {
   const options = commandLineArgs(optionDefinitions);
   if (options.help) {
     displayHelpMenu();

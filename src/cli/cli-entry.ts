@@ -1,18 +1,18 @@
 import fs from "fs";
 import filterLabels from "../utils/filter-labels";
 import { getAllLabels } from "../utils/get-labels";
-import { args } from "./cli-args";
+import { Args } from "./cli-args";
 import { log } from "./logging";
 export default async function cliEntry() {
   // Check for required arguments.
-  if (!args.owner || !args.repository) {
+  if (!Args.owner || !Args.repository) {
     log.error(
       "Missing required arguments: `owner`, `repository` (use -o, and -r)"
     );
     process.exit(1);
   }
 
-  if (!args.tool) {
+  if (!Args.tool) {
     log.info("No tool selected. Use `--tool` to select a tool.");
     const _tools = fs.readdirSync(`src/tools`);
     // remove .ts extension
@@ -27,22 +27,22 @@ export default async function cliEntry() {
 
   // Get all labels.
   const labels = await getAllLabels(
-    args as { owner: string; repository: string }
+    Args as { owner: string; repository: string }
   );
 
   // Filter labels.
-  if (!args.regex) {
-    args.regex = ".*"; // Match everything.
+  if (!Args.regex) {
+    Args.regex = ".*"; // Match everything.
   }
 
-  const selected = await filterLabels(labels, args.regex);
+  const selected = await filterLabels(labels, Args.regex);
 
   const selectedBuffer = selected.map(label => label.name);
   log.ok(`Selected the following labels:\n\n${selectedBuffer.join("\n")}`);
 
   // Select tool
-  if (args.tool) {
-    const tool = await import(`../tools/${args.tool}`);
+  if (Args.tool) {
+    const tool = await import(`../tools/${Args.tool}`);
     return await tool.default(selectedBuffer);
   }
 }

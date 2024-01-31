@@ -1,16 +1,11 @@
-import { Label } from "../network/label";
 import { Octokit } from "@octokit/rest";
-
-import { githubToken } from "../utils/get-github-token";
+import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
+import { GitHubComment, GitHubIssue } from "../github-types";
+import { githubToken } from "../utils/get-github-token";
 
-export default async function _scrubComments(args: {
-  owner: string;
-  repository: string;
-  execute?: boolean;
-  value?: string;
-}) {
-  const { owner, repository, execute, value } = args;
+export default async function _scrubComments() {
+  const { owner, repository, execute, value } = Args;
   if (!execute) {
     log.info("dry run, not editing comments. Use `--execute` to run.");
     return;
@@ -19,7 +14,7 @@ export default async function _scrubComments(args: {
 
   try {
     let page = 1;
-    let allIssues = [];
+    let allIssues: GitHubIssue[] = [];
 
     while (true) {
       // Get all issues (including pull requests) in the repository
@@ -43,7 +38,7 @@ export default async function _scrubComments(args: {
 
     for (const issue of allIssues) {
       let page = 1;
-      let allComments = [];
+      let allComments: GitHubComment[] = [];
 
       while (true) {
         // Get comments for each issue
@@ -65,9 +60,19 @@ export default async function _scrubComments(args: {
 
       for (const comment of allComments) {
         const newBody = comment.body?.replace(/^\/assign/, "/start");
-
+        if (!newBody) {
+          continue;
+        }
         if (newBody !== comment.body) {
           // Edit the comment
+
+          if (!Args.execute) {
+            log.info(
+              "dry run, not editing comments. Use `--execute` to edit comments"
+            );
+            return;
+          }
+
           await octokit.issues.updateComment({
             owner,
             repo: repository,
@@ -82,6 +87,6 @@ export default async function _scrubComments(args: {
 
     console.log("Finished editing comments.");
   } catch (error) {
-    log.error(error);
+    log.error(error.message);
   }
 }

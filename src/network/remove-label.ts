@@ -1,13 +1,19 @@
 import * as https from "https";
+import { Args } from "../cli/cli-args";
+import { log } from "../cli/logging";
 import { githubToken } from "../utils/get-github-token";
 
-export async function removeLabel(args, label: string) {
+export async function removeLabel(label: string) {
+  if (!Args.execute) {
+    log.info("dry run, not deleting labels. Use `--execute` to delete labels");
+    return;
+  }
   return new Promise((resolve, reject) => {
     const options = {
       hostname: "api.github.com",
       port: 443,
-      path: `/repos/${args.owner}/${
-        args.repository
+      path: `/repos/${Args.owner}/${
+        Args.repository
       }/labels/${encodeURIComponent(label)}`,
       method: "DELETE",
       headers: {
