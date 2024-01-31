@@ -1,8 +1,7 @@
-import { Octokit } from "@octokit/rest";
 import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { GitHubComment, GitHubIssue } from "../github-types";
-import { githubToken } from "../utils/get-github-token";
+import { octokit } from "../utils/get-github-token";
 
 export default async function _scrubComments() {
   const { owner, repository, execute, value } = Args;
@@ -10,7 +9,6 @@ export default async function _scrubComments() {
     log.info("dry run, not editing comments. Use `--execute` to run.");
     return;
   }
-  const octokit = new Octokit({ auth: githubToken });
 
   try {
     let page = 1;

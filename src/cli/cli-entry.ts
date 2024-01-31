@@ -26,9 +26,7 @@ export default async function cliEntry() {
   }
 
   // Get all labels.
-  const labels = await getLabels(
-    Args as { owner: string; repository: string }
-  );
+  const labels = await getLabels();
 
   // Filter labels.
   if (!Args.regex) {

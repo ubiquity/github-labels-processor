@@ -1,20 +1,14 @@
-import { Octokit } from "@octokit/rest";
+import { Args } from "../cli/cli-args";
 import { GitHubLabel } from "../github-types";
+import { octokit } from "./get-github-token";
 
-const octokit = new Octokit();
 
-export default async function getLabels({
-  owner,
-  repository,
-}: {
-  owner: string;
-  repository: string;
-}): Promise<GitHubLabel[]> {
+export default async function getLabels(): Promise<GitHubLabel[]> {
   const labelsResponse = await octokit.paginate(
     octokit.rest.issues.listLabelsForRepo,
     {
-      owner,
-      repo: repository,
+      owner: Args.owner,
+      repo: Args.repository,
       per_page: 100,
     }
   );

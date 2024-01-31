@@ -8,7 +8,7 @@ export default async function resetColors(args: {
   repository: string;
 }) {
   // Get all labels.
-  const allLabels = await getLabels(args);
+  const allLabels = await getLabels();
   // do not select labels with `^Price:.+` regex
   const notPriceLabels = await filterLabels(allLabels, `^(?!Price:.+).+`);
 

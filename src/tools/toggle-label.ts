@@ -1,9 +1,8 @@
-import { Octokit } from "@octokit/rest";
 
 import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
 import { GitHubLabel } from "../github-types";
-import { githubToken } from "../utils/get-github-token";
+import { octokit } from "../utils/get-github-token";
 
 export default async function _toggleLabel() {
   if (!Args.name) {
@@ -13,7 +12,6 @@ export default async function _toggleLabel() {
 
   const labelToToggle = Args.name;
 
-  const octokit = new Octokit({ auth: githubToken });
 
   try {
     const issues = await octokit.paginate(octokit.issues.listForRepo, {
