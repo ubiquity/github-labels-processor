@@ -1,4 +1,9 @@
+import { Args } from "../cli/cli-args";
 import { log } from "../cli/logging";
+import { GitHubLabel } from "../github-types";
+import { updateLabelColor } from "../network/update-label-color";
+import filterLabels from "../utils/filter-labels";
+import colorizeLabels from "./colorize-labels";
 import _deleteLabels from "./delete-labels";
 import { checkIfLabelExists } from "./migrate-priority-labels/check-if-label-exists";
 import { createNewLabel } from "./migrate-priority-labels/create-new-label";
@@ -21,5 +26,39 @@ export default async function migratePriorityLabels() {
       if (error instanceof Error) log.error(error.message);
       else console.error(error);
     }
+  }
+
+  Args.color = "ededed";
+  await resetColors(Object.values(priorityMapping));
+  await resetColors([
+    "Time: <1 Hour",
+    "Time: <2 Hours",
+    "Time: <4 Hours",
+    "Time: <1 Day",
+    "Time: <1 Week",
+    "Time: <2 Weeks",
+    "Time: <1 Month",
+  ]);
+
+  await deletePriceRangeLabels(allLabels);
+  // Filter for `Price: ` labels.
+  const priceLabels = await filterLabels(allLabels, `^Price:.+`);
+  // Set `Price: ` labels to green.
+  Args.color = "1f883d";
+  await colorizeLabels(priceLabels);
+}
+
+async function deletePriceRangeLabels(allLabels: GitHubLabel[]) {
+  const plusSignLabelRegex = /^Price:\s\d+(\.\d+)?\+\sUSD$/; // regex to match labels with a plus sign
+  const rangePriceLabels = allLabels.filter(label =>
+    plusSignLabelRegex.test(label.name)
+  );
+  await _deleteLabels(rangePriceLabels.map(label => label.name));
+}
+
+async function resetColors(labels: string[]) {
+  for (const label of labels) {
+    const response = await updateLabelColor(label);
+    console.trace({ response });
   }
 }
