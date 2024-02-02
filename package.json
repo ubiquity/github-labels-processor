@@ -9,9 +9,10 @@
     "utils:remove-list": "tsx -e \"require('src/utils/clear-unused-labels/clear-unused-labels.ts').default();\"",
     "utils:colorize": "tsx -e \"require('src/utils/colorize-labels.ts').default();\"",
     "utils:toggle-label": "tsx src/cli/cli-entry-wrapper.ts --tool toggle-label -v ping",
-    "format": "run-s format:prettier format:lint",
+    "format": "run-s format:lint format:prettier format:cspell",
     "format:lint": "eslint --fix .",
     "format:prettier": "prettier --write .",
+    "format:cspell": "cspell **/*",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -29,6 +30,9 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@cspell/dict-node": "^4.0.3",
+    "@cspell/dict-software-terms": "^3.3.17",
+    "@cspell/dict-typescript": "^3.1.2",
     "@types/command-line-args": "^5.2.0",
     "@types/command-line-usage": "^5.0.2",
     "@types/node": "^20.10.0",

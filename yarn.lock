@@ -643,7 +643,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cspell/dict-software-terms@npm:^3.3.15":
+"@cspell/dict-software-terms@npm:^3.3.15, @cspell/dict-software-terms@npm:^3.3.17":
   version: 3.3.17
   resolution: "@cspell/dict-software-terms@npm:3.3.17"
   checksum: 0e8b3cf226f2cd3dd0bccb1f28a8fac24d7223e7ba670b73aec08cb69a1285755743716e53261ae4ef4f6f43d7682a8af11f4a14ef50b1875c1809f955c71f06
@@ -5977,6 +5977,9 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^18.4.3
     "@commitlint/config-conventional": ^18.4.3
+    "@cspell/dict-node": ^4.0.3
+    "@cspell/dict-software-terms": ^3.3.17
+    "@cspell/dict-typescript": ^3.1.2
     "@octokit/rest": ^20.0.1
     "@types/command-line-args": ^5.2.0
     "@types/command-line-usage": ^5.0.2
